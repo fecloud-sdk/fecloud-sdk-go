@@ -11,12 +11,12 @@ jobs:
         git config --global user.name ${{ vars.SDK_USERNAME }}
         git config --global user.email ${{ vars.SDK_EMAIL }}
     - name: Pull source
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         github-server-url: https://gitee.com
         repository: ${{ vars.SOURCE_REPO }}
         token: ${{ secrets.GITEE_TOKEN }}
-        ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
+        ref: 'master-dev'
         path: source
     - name: Pull target
       uses: actions/checkout@v3
