@@ -24,12 +24,16 @@ import (
 	"fmt"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/httphandler"
 	"net"
+	"net/http"
 	"time"
 )
 
-const DefaultTimeout = 120 * time.Second
-const DefaultRetries = 0
-const DefaultIgnoreSSLVerification = false
+const (
+	DefaultTimeout                        = 120 * time.Second
+	DefaultRetries                        = 0
+	DefaultIgnoreSSLVerification          = false
+	DefaultIgnoreContentTypeForGetRequest = false
+)
 
 type DialContext func(ctx context.Context, network string, addr string) (net.Conn, error)
 
@@ -39,14 +43,25 @@ type HttpConfig struct {
 	Retries               int
 	HttpProxy             *Proxy
 	IgnoreSSLVerification bool
-	HttpHandler           *httphandler.HttpHandler
+	// AllowRedirects Experimental configuration, the default value is false.
+	// Automatic redirection is allowed when turns on, which may cause some request exceptions.
+	AllowRedirects bool
+	HttpHandler    *httphandler.HttpHandler
+	// HttpTransport This configuration has the highest priority,
+	// which means specifying the HttpTransport will invalidate other configurations,
+	// such as DialContext, HttpProxy, IgnoreSSLVerification.
+	HttpTransport *http.Transport
+	// IgnoreContentTypeForGetRequest Ignore the request header Content-Type when sending a GET request,
+	// the default value is false
+	IgnoreContentTypeForGetRequest bool
 }
 
 func DefaultHttpConfig() *HttpConfig {
 	return &HttpConfig{
-		Timeout:               DefaultTimeout,
-		Retries:               DefaultRetries,
-		IgnoreSSLVerification: DefaultIgnoreSSLVerification,
+		Timeout:                        DefaultTimeout,
+		Retries:                        DefaultRetries,
+		IgnoreSSLVerification:          DefaultIgnoreSSLVerification,
+		IgnoreContentTypeForGetRequest: DefaultIgnoreContentTypeForGetRequest,
 	}
 }
 
@@ -70,13 +85,35 @@ func (config *HttpConfig) WithIgnoreSSLVerification(ignore bool) *HttpConfig {
 	return config
 }
 
+// WithAllowRedirects Experimental configuration, the default value is false.
+// Automatic redirection is allowed when turns on, which may cause some request exceptions.
+func (config *HttpConfig) WithAllowRedirects(allowRedirects bool) *HttpConfig {
+	config.AllowRedirects = allowRedirects
+	return config
+}
+
 func (config *HttpConfig) WithHttpHandler(handler *httphandler.HttpHandler) *HttpConfig {
 	config.HttpHandler = handler
 	return config
 }
 
+// WithHttpTransport This configuration has the highest priority,
+// which means specifying the HttpTransport will invalidate other configurations,
+// such as DialContext, HttpProxy, IgnoreSSLVerification.
+func (config *HttpConfig) WithHttpTransport(transport *http.Transport) *HttpConfig {
+	config.HttpTransport = transport
+	return config
+}
+
 func (config *HttpConfig) WithProxy(proxy *Proxy) *HttpConfig {
 	config.HttpProxy = proxy
+	return config
+}
+
+// WithIgnoreContentTypeForGetRequest Ignore the request header Content-Type when sending a GET request,
+// the default value is false
+func (config *HttpConfig) WithIgnoreContentTypeForGetRequest(ignoreContentTypeForGetRequest bool) *HttpConfig {
+	config.IgnoreContentTypeForGetRequest = ignoreContentTypeForGetRequest
 	return config
 }
 

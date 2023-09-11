@@ -26,14 +26,16 @@ import (
 	"errors"
 	"fmt"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/auth"
+	"github.com/fecloud-sdk/fecloud-sdk-go/core/config"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/converter"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/def"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/exchange"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/impl"
+	"github.com/fecloud-sdk/fecloud-sdk-go/core/progress"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/request"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/response"
 	"github.com/fecloud-sdk/fecloud-sdk-go/core/sdkerr"
-	jsoniter "github.com/json-iterator/go"
+	"github.com/fecloud-sdk/fecloud-sdk-go/core/utils"
 	"go.mongodb.org/mongo-driver/bson"
 	"io/ioutil"
 	"net"
@@ -57,6 +59,7 @@ type HcHttpClient struct {
 	credential    auth.ICredential
 	extraHeader   map[string]string
 	httpClient    *impl.DefaultHttpClient
+	httpConfig    config.HttpConfig
 }
 
 func NewHcHttpClient(httpClient *impl.DefaultHttpClient) *HcHttpClient {
@@ -70,6 +73,11 @@ func (hc *HcHttpClient) WithEndpoints(endpoints []string) *HcHttpClient {
 
 func (hc *HcHttpClient) WithCredential(credential auth.ICredential) *HcHttpClient {
 	hc.credential = credential
+	return hc
+}
+
+func (hc *HcHttpClient) WithHttpConfig(httpConfig config.HttpConfig) *HcHttpClient {
+	hc.httpConfig = httpConfig
 	return hc
 }
 
@@ -154,8 +162,8 @@ func (hc *HcHttpClient) buildRequest(req interface{}, reqDef *def.HttpRequestDef
 		WithMethod(reqDef.Method).
 		WithPath(reqDef.Path)
 
-	if reqDef.ContentType != "" {
-		builder.AddHeaderParam(contentType, reqDef.ContentType)
+	if pq, ok := req.(progress.Request); ok {
+		builder.WithProgressListener(pq.GetProgressListener()).WithProgressInterval(pq.GetProgressInterval())
 	}
 
 	uaValue := "fecloud-usdk-go/3.0"
@@ -188,7 +196,7 @@ func (hc *HcHttpClient) buildRequest(req interface{}, reqDef *def.HttpRequestDef
 
 func (hc *HcHttpClient) fillParamsFromReq(req interface{}, t reflect.Type, reqDef *def.HttpRequestDef,
 	attrMaps map[string]string, builder *request.HttpRequestBuilder) (*request.HttpRequestBuilder, error) {
-
+	hasBody := false
 	for _, fieldDef := range reqDef.RequestFields {
 		value, err := hc.getFieldValueByName(fieldDef.Name, attrMaps, req)
 		if err != nil {
@@ -217,9 +225,14 @@ func (hc *HcHttpClient) fillParamsFromReq(req interface{}, t reflect.Type, reqDe
 			} else {
 				builder.WithBody("", value.Interface())
 			}
+			hasBody = true
 		case def.Form:
 			builder.AddFormParam(fieldDef.JsonTag, value.Interface().(def.FormData))
 		}
+	}
+
+	if reqDef.ContentType != "" && !(hc.httpConfig.IgnoreContentTypeForGetRequest && reqDef.Method == "GET" && !hasBody) {
+		builder.AddHeaderParam(contentType, reqDef.ContentType)
 	}
 
 	return builder, nil
@@ -262,13 +275,20 @@ func (hc *HcHttpClient) getFieldValueByName(name string, jsonTag map[string]stri
 
 func flattenEnumStruct(value reflect.Value) (reflect.Value, error) {
 	if value.Kind() == reflect.Struct {
-		v, e := jsoniter.Marshal(value.Interface())
+		if method := value.MethodByName("Value"); method.IsValid() {
+			return method.Call(nil)[0], nil
+		}
+
+		v, e := utils.Marshal(value.Interface())
 		if e == nil {
-			if strings.HasPrefix(string(v), "\"") {
-				return reflect.ValueOf(strings.Trim(string(v), "\"")), nil
-			} else {
-				return reflect.ValueOf(string(v)), nil
+			str := string(v)
+			if strings.HasSuffix(str, "\n") {
+				str = strings.Trim(str, "\n")
 			}
+			if strings.HasPrefix(str, "\"") {
+				str = strings.Trim(str, "\"")
+			}
+			return reflect.ValueOf(str), nil
 		}
 		return reflect.ValueOf(nil), e
 	}
@@ -367,7 +387,7 @@ func (hc *HcHttpClient) deserializeResponseFields(resp *response.DefaultHttpResp
 		} else if strings.Contains(resp.Response.Header.Get(contentType), applicationBson) {
 			err = bson.Unmarshal(data, reqDef.Response)
 		} else {
-			err = jsoniter.Unmarshal(data, &reqDef.Response)
+			err = utils.Unmarshal(data, &reqDef.Response)
 		}
 
 		if err != nil {
