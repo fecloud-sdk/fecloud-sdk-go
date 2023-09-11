@@ -15,7 +15,7 @@ jobs:
       with:
         github-server-url: https://gitee.com
         repository: ${{ vars.SOURCE_REPO }}
-        ssh-key: ${{ secrets.SSH_KEY }}
+        token: ${{ secrets.GITEE_TOKEN }}
         ssh-known-hosts: ${{ secrets.KNOWN_HOSTS }}
         path: source
     - name: Pull target
