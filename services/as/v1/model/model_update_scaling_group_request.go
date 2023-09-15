@@ -1,0 +1,25 @@
+package model
+
+import (
+	"github.com/fecloud-sdk/fecloud-sdk-go/core/utils"
+
+	"strings"
+)
+
+// UpdateScalingGroupRequest Request Object
+type UpdateScalingGroupRequest struct {
+
+	// 伸缩组ID
+	ScalingGroupId string `json:"scaling_group_id"`
+
+	Body *UpdateScalingGroupOption `json:"body,omitempty"`
+}
+
+func (o UpdateScalingGroupRequest) String() string {
+	data, err := utils.Marshal(o)
+	if err != nil {
+		return "UpdateScalingGroupRequest struct{}"
+	}
+
+	return strings.Join([]string{"UpdateScalingGroupRequest", string(data)}, " ")
+}
