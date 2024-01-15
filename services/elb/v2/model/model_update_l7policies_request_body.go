@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateL7policiesRequestBody This is a auto create Body Object
 type UpdateL7policiesRequestBody struct {
 	L7policy *UpdateL7policyReq `json:"l7policy"`
 }

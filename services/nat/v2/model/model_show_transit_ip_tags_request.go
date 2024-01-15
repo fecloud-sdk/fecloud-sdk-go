@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowTransitIpTagsRequest Request Object
 type ShowTransitIpTagsRequest struct {
-
-	// 中转IP的ID。
 	ResourceId string `json:"resource_id"`
 }
 

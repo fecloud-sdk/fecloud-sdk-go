@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListSlowlogForLtsResponse Response Object
 type ListSlowlogForLtsResponse struct {
-
-	// 日志数据集合。
 	SlowLogList *[]MysqlSlowLogDetailsItem `json:"slow_log_list,omitempty"`
 
-	// 当前慢日志阈值时间。
 	LongQueryTime  *string `json:"long_query_time,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

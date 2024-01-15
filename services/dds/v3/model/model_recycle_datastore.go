@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// RecycleDatastore 数据库信息。
 type RecycleDatastore struct {
-
-	// 数据库版本类型。取值“DDS-Community”。
 	Type RecycleDatastoreType `json:"type"`
 
-	// 数据库版本。支持3.4、3.2和4.0版本。取值为“3.4”、“3.2”或“4.0”。
 	Version string `json:"version"`
 }
 

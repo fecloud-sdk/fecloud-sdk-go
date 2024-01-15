@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// RestoreInstanceFromCollectionResponse Response Object
 type RestoreInstanceFromCollectionResponse struct {
-
-	// 库表级恢复的异步任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

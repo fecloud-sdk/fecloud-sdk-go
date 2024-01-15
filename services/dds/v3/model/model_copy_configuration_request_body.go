@@ -7,11 +7,8 @@ import (
 )
 
 type CopyConfigurationRequestBody struct {
-
-	// 复制后的参数模板模板名称
 	Name string `json:"name"`
 
-	// 参数模板模板描述。
 	Description *string `json:"description,omitempty"`
 }
 

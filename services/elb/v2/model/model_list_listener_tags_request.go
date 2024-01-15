@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListListenerTagsRequest Request Object
 type ListListenerTagsRequest struct {
 }
 

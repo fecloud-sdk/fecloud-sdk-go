@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateDbUserPrivilegeRequest Request Object
 type UpdateDbUserPrivilegeRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *DbUserPrivilegeRequest `json:"body,omitempty"`

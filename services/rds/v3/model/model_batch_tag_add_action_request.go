@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// BatchTagAddActionRequest Request Object
 type BatchTagAddActionRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *BatchTagActionAddRequestBody `json:"body,omitempty"`

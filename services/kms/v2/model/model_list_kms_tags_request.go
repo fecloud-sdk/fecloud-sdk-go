@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListKmsTagsRequest Request Object
 type ListKmsTagsRequest struct {
 }
 

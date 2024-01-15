@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListServerTagsRequest Request Object
 type ListServerTagsRequest struct {
 }
 

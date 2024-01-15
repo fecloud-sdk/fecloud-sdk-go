@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateNatGatewayDnatRuleResponse Response Object
 type UpdateNatGatewayDnatRuleResponse struct {
 	DnatRule       *NatGatewayDnatRuleResponseBody `json:"dnat_rule,omitempty"`
 	HttpStatusCode int                             `json:"-"`

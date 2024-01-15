@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateLifyCycleHookRequest Request Object
 type CreateLifyCycleHookRequest struct {
-
-	// 伸缩组标识。
 	ScalingGroupId string `json:"scaling_group_id"`
 
 	Body *CreateLifeCycleHookOption `json:"body,omitempty"`

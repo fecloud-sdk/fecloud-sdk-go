@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchDeleteScalingConfigOption 批量删除伸缩配置请求
 type BatchDeleteScalingConfigOption struct {
-
-	// 伸缩配置ID。
 	ScalingConfigurationId []string `json:"scaling_configuration_id"`
 }
 

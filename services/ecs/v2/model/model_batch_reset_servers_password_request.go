@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchResetServersPasswordRequest Request Object
 type BatchResetServersPasswordRequest struct {
 	Body *BatchResetServersPasswordRequestBody `json:"body,omitempty"`
 }

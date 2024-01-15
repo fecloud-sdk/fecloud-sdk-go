@@ -7,11 +7,8 @@ import (
 )
 
 type OpenProxyRequest struct {
-
-	// 规格ID。
 	FlavorId *string `json:"flavor_id,omitempty"`
 
-	// 节点数量。
 	NodeNum *int32 `json:"node_num,omitempty"`
 }
 

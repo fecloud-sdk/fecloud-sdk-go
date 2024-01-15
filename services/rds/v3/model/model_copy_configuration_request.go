@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CopyConfigurationRequest Request Object
 type CopyConfigurationRequest struct {
-
-	// 参数模板ID
 	ConfigId string `json:"config_id"`
 
 	Body *ConfigurationCopyRequestBody `json:"body,omitempty"`

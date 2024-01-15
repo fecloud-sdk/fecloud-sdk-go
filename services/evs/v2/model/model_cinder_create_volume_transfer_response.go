@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CinderCreateVolumeTransferResponse Response Object
 type CinderCreateVolumeTransferResponse struct {
 	Transfer       *CreateVolumeTransferDetail `json:"transfer,omitempty"`
 	HttpStatusCode int                         `json:"-"`

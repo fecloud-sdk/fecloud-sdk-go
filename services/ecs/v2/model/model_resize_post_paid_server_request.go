@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ResizePostPaidServerRequest Request Object
 type ResizePostPaidServerRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
 	Body *ResizePostPaidServerRequestBody `json:"body,omitempty"`

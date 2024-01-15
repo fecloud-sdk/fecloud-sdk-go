@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ResizeInstanceResponse Response Object
 type ResizeInstanceResponse struct {
 	HttpStatusCode int `json:"-"`
 }

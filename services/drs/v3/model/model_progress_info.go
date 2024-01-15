@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ProgressInfo 迁移进度信息体
 type ProgressInfo struct {
-
-	// 完成进度
 	Completed *string `json:"completed,omitempty"`
 
-	// 预计剩余时间
 	RemainingTime *string `json:"remaining_time,omitempty"`
 }
 

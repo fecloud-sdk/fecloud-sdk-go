@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ConclusionItem 诊断结论
 type ConclusionItem struct {
-
-	// 结论id
 	Id int32 `json:"id"`
 
-	// 结论参数
 	Params map[string]string `json:"params,omitempty"`
 }
 

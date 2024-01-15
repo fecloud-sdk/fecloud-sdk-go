@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowScalingGroupResponse Response Object
 type ShowScalingGroupResponse struct {
 	ScalingGroup   *ScalingGroups `json:"scaling_group,omitempty"`
 	HttpStatusCode int            `json:"-"`

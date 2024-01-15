@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DeleteTransitIpTagRequest Request Object
 type DeleteTransitIpTagRequest struct {
-
-	// 标签key。
 	Key string `json:"key"`
 
-	// 中转IP的ID。
 	ResourceId string `json:"resource_id"`
 }
 

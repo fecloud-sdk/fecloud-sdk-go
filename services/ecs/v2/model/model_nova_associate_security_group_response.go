@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaAssociateSecurityGroupResponse Response Object
 type NovaAssociateSecurityGroupResponse struct {
 	HttpStatusCode int `json:"-"`
 }

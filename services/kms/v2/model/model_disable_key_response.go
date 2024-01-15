@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DisableKeyResponse Response Object
 type DisableKeyResponse struct {
 	KeyInfo        *KeyStatusInfo `json:"key_info,omitempty"`
 	HttpStatusCode int            `json:"-"`

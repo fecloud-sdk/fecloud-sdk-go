@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SecurityGroups 安全组信息
 type SecurityGroups struct {
-
-	// 安全组ID
 	Id string `json:"id"`
 }
 

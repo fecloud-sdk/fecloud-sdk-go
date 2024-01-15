@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// SlowLogFile 慢日志信息。
 type SlowLogFile struct {
-
-	// 文件名。
 	FileName string `json:"file_name"`
 
-	// 文件大小（单位Byte）
 	FileSize string `json:"file_size"`
 }
 

@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// BatchDeleteListenerTagsRequestBody This is a auto create Body Object
 type BatchDeleteListenerTagsRequestBody struct {
-
-	// 操作类型。 取值范围：delete- 删除标签。
 	Action BatchDeleteListenerTagsRequestBodyAction `json:"action"`
 
-	// 标签对象列表。
 	Tags []ResourceTag `json:"tags"`
 }
 

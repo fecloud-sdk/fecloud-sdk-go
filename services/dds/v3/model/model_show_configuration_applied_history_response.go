@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowConfigurationAppliedHistoryResponse Response Object
 type ShowConfigurationAppliedHistoryResponse struct {
-
-	// 参数模板应用历史列表
 	Histories      *[]ApplyHistoryInfo `json:"histories,omitempty"`
 	HttpStatusCode int                 `json:"-"`
 }

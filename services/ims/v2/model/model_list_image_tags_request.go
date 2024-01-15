@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListImageTagsRequest Request Object
 type ListImageTagsRequest struct {
-
-	// 镜像ID。
 	ImageId string `json:"image_id"`
 }
 

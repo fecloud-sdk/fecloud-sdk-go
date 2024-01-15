@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ListScalingTagInfosByTenantIdRequest Request Object
 type ListScalingTagInfosByTenantIdRequest struct {
-
-	// 资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 	ResourceType ListScalingTagInfosByTenantIdRequestResourceType `json:"resource_type"`
 }
 

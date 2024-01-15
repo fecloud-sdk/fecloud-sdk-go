@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowServerLimitsRequest Request Object
 type ShowServerLimitsRequest struct {
 }
 

@@ -9,37 +9,25 @@ import (
 	"strings"
 )
 
-// ContentCompareDetail 内容对比结果详情。
 type ContentCompareDetail struct {
-
-	// 源库名称。
 	SourceDbName string `json:"source_db_name"`
 
-	// 目标库名称。
 	TargetDbName string `json:"target_db_name"`
 
-	// 源库的表名称。
 	SourceTableName string `json:"source_table_name"`
 
-	// 目标库的表名称。
 	TargetTableName string `json:"target_table_name"`
 
-	// 源库的表的行数。
 	SourceRowNum int32 `json:"source_row_num"`
 
-	// 目标库的表的行数。
 	TargetRowNum int32 `json:"target_row_num"`
 
-	// 源库的表和目标库的表的差异值。
 	DiffRowNum int32 `json:"diff_row_num"`
 
-	// 行对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 	LineCompareResult *ContentCompareDetailLineCompareResult `json:"line_compare_result,omitempty"`
 
-	// 内容对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 	ContentCompareResult ContentCompareDetailContentCompareResult `json:"content_compare_result"`
 
-	// 附加信息。
 	Message *string `json:"message,omitempty"`
 }
 

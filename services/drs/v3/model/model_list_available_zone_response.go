@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListAvailableZoneResponse Response Object
 type ListAvailableZoneResponse struct {
-
-	// 可用区信息
 	AzInfos        *[]AzInfoResp `json:"az_infos,omitempty"`
 	HttpStatusCode int           `json:"-"`
 }

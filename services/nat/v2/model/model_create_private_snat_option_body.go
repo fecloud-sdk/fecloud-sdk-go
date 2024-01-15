@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreatePrivateSnatOptionBody 创建SNAT规则的请求体。
 type CreatePrivateSnatOptionBody struct {
 	SnatRule *CreatePrivateSnatOption `json:"snat_rule"`
 }

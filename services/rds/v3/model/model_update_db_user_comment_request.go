@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// UpdateDbUserCommentRequest Request Object
 type UpdateDbUserCommentRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 数据库用户名。
 	UserName string `json:"user_name"`
 
 	Body *UpdateDbUserReq `json:"body,omitempty"`

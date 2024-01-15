@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AdditionalProperties 属性值
 type AdditionalProperties struct {
-
-	// 类型
 	Type string `json:"type"`
 }
 

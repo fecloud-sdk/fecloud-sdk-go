@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowPoolResponse Response Object
 type ShowPoolResponse struct {
-
-	// 请求ID。  注：自动生成 。
 	RequestId *string `json:"request_id,omitempty"`
 
 	Pool           *Pool `json:"pool,omitempty"`

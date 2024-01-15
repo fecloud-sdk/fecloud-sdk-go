@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// CreateSqlserverDbUserRequest Request Object
 type CreateSqlserverDbUserRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *SqlserverUserForCreation `json:"body,omitempty"`

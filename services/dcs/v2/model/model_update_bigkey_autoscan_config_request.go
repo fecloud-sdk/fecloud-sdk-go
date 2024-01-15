@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateBigkeyAutoscanConfigRequest Request Object
 type UpdateBigkeyAutoscanConfigRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *AutoscanConfigRequest `json:"body,omitempty"`

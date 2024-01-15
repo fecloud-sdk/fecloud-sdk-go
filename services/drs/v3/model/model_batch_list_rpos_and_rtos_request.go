@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// BatchListRposAndRtosRequest Request Object
 type BatchListRposAndRtosRequest struct {
-
-	// 请求语言类型
 	XLanguage *BatchListRposAndRtosRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchQueryRpoAndRtoReq `json:"body,omitempty"`

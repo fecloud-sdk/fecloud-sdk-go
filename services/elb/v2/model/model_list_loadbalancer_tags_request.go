@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListLoadbalancerTagsRequest Request Object
 type ListLoadbalancerTagsRequest struct {
 }
 

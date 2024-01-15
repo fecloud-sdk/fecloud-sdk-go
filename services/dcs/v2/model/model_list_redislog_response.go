@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListRedislogResponse Response Object
 type ListRedislogResponse struct {
-
-	// 总数
 	TotalNum *int32 `json:"total_num,omitempty"`
 
-	// 运行日志列表
 	FileList       *[]RunlogItem `json:"file_list,omitempty"`
 	HttpStatusCode int           `json:"-"`
 }

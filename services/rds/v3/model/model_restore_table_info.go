@@ -7,11 +7,8 @@ import (
 )
 
 type RestoreTableInfo struct {
-
-	// 旧表名
 	OldName string `json:"oldName"`
 
-	// 新表名
 	NewName string `json:"newName"`
 }
 

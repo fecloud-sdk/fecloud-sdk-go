@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CinderListAvailabilityZonesResponse Response Object
 type CinderListAvailabilityZonesResponse struct {
-
-	// 查询请求返回的可用分区列表。
 	AvailabilityZoneInfo *[]AzInfo `json:"availabilityZoneInfo,omitempty"`
 	HttpStatusCode       int       `json:"-"`
 }

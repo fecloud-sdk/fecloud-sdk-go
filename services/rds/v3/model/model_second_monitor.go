@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// SecondMonitor 秒级监控信息
 type SecondMonitor struct {
-
-	// 秒级监控开关
 	SwitchOption bool `json:"switch_option"`
 
-	// 监控间隔, 支持1秒和5秒
 	Interval *SecondMonitorInterval `json:"interval,omitempty"`
 }
 

@@ -10,14 +10,10 @@ import (
 )
 
 type CustomerModifyAutoEnlargePolicyReq struct {
-
-	// 是否开启自动扩容,true为开启,false为关闭
 	SwitchOption bool `json:"switch_option"`
 
-	// 扩容上限，单位GB, 取值范围40~4000，需要大于等于实例当前存储空间总大小，switch_option为true必填
 	LimitSize *int32 `json:"limit_size,omitempty"`
 
-	// 可用存储空间百分比，小于等于此值或者10GB时触发扩容，switch_option为true时必填
 	TriggerThreshold *CustomerModifyAutoEnlargePolicyReqTriggerThreshold `json:"trigger_threshold,omitempty"`
 }
 

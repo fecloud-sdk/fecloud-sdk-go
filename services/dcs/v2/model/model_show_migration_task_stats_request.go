@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowMigrationTaskStatsRequest Request Object
 type ShowMigrationTaskStatsRequest struct {
-
-	// 任务ID。
 	TaskId string `json:"task_id"`
 }
 

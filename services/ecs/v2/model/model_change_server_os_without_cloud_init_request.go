@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ChangeServerOsWithoutCloudInitRequest Request Object
 type ChangeServerOsWithoutCloudInitRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
 	Body *ChangeServerOsWithoutCloudInitRequestBody `json:"body,omitempty"`

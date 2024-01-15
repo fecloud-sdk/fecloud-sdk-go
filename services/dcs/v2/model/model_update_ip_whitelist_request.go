@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateIpWhitelistRequest Request Object
 type UpdateIpWhitelistRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *ModifyIpWhitelistBody `json:"body,omitempty"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteTransitIpRequest Request Object
 type DeleteTransitIpRequest struct {
-
-	// 中转IP的ID。
 	TransitIpId string `json:"transit_ip_id"`
 }
 

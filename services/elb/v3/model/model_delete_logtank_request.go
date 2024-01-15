@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteLogtankRequest Request Object
 type DeleteLogtankRequest struct {
-
-	// 云日志ID。
 	LogtankId string `json:"logtank_id"`
 }
 

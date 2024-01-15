@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// RevokeRequest Request Object
 type RevokeRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *RevokeRequestBody `json:"body,omitempty"`

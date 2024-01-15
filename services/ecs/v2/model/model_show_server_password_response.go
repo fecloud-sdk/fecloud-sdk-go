@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowServerPasswordResponse Response Object
 type ShowServerPasswordResponse struct {
-
-	// 加密后的密码。
 	Password       *string `json:"password,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

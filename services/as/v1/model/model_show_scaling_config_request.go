@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowScalingConfigRequest Request Object
 type ShowScalingConfigRequest struct {
-
-	// 伸缩配置ID，查询唯一配置。
 	ScalingConfigurationId string `json:"scaling_configuration_id"`
 }
 

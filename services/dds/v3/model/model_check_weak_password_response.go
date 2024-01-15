@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CheckWeakPasswordResponse Response Object
 type CheckWeakPasswordResponse struct {
-
-	// 是否弱密码，true:是弱密码 false:不是弱密码
 	Weak           *bool `json:"weak,omitempty"`
 	HttpStatusCode int   `json:"-"`
 }

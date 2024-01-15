@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateL7ruleRequestBody This is a auto create Body Object
 type CreateL7ruleRequestBody struct {
 	Rule *CreateL7ruleReq `json:"rule"`
 }

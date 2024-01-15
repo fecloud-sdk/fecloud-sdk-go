@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AttachServerVolumeRequest Request Object
 type AttachServerVolumeRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
 	Body *AttachServerVolumeRequestBody `json:"body,omitempty"`

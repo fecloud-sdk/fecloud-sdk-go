@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateDatakeyWithoutPlaintextRequest Request Object
 type CreateDatakeyWithoutPlaintextRequest struct {
 	Body *CreateDatakeyRequestBody `json:"body,omitempty"`
 }

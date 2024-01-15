@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// GlanceAddImageMemberRequestBody 添加镜像成员请求参数
 type GlanceAddImageMemberRequestBody struct {
-
-	// 镜像成员。取值为目标用户的项目ID。
 	Member string `json:"member"`
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CheckPasswordResponse Response Object
 type CheckPasswordResponse struct {
 	HttpStatusCode int `json:"-"`
 }

@@ -7,20 +7,14 @@ import (
 )
 
 type RenameCommandResp struct {
-
-	// 命令command
 	Command *string `json:"command,omitempty"`
 
-	// 命令flushall
 	Flushall *string `json:"flushall,omitempty"`
 
-	// 命令flushdb
 	Flushdb *string `json:"flushdb,omitempty"`
 
-	// 命令hgetall
 	Hgetall *string `json:"hgetall,omitempty"`
 
-	// 命令keys
 	Keys *string `json:"keys,omitempty"`
 }
 

@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// UpdatePostgresqlParameterValueRequest Request Object
 type UpdatePostgresqlParameterValueRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 参数名称。
 	Name string `json:"name"`
 
 	Body *ModifyParamRequest `json:"body,omitempty"`

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListPrivateDnatsResponse Response Object
 type ListPrivateDnatsResponse struct {
-
-	// 查询DNAT规则列表的响应体。
 	DnatRules *[]PrivateDnat `json:"dnat_rules,omitempty"`
 
-	// 请求ID。
 	RequestId *string `json:"request_id,omitempty"`
 
 	PageInfo       *PageInfo `json:"page_info,omitempty"`

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DeleteTagRequest Request Object
 type DeleteTagRequest struct {
-
-	// 密钥ID
 	KeyId string `json:"key_id"`
 
-	// 标签键的值
 	Key string `json:"key"`
 }
 

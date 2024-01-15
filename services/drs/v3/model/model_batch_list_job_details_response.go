@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// BatchListJobDetailsResponse Response Object
 type BatchListJobDetailsResponse struct {
-
-	// 任务数量
 	Count *int32 `json:"count,omitempty"`
 
-	// 任务详细信息
 	Results        *[]QueryJobResp `json:"results,omitempty"`
 	HttpStatusCode int             `json:"-"`
 }

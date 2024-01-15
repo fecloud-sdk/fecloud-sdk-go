@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateNatGatewaySnatRuleRequestOption 更新SNAT规则的请求体。
 type UpdateNatGatewaySnatRuleRequestOption struct {
 	SnatRule *UpdateNatGatewaySnatRuleOption `json:"snat_rule"`
 }

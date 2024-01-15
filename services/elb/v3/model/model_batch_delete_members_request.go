@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchDeleteMembersRequest Request Object
 type BatchDeleteMembersRequest struct {
-
-	// 后端服务器组ID。
 	PoolId string `json:"pool_id"`
 
 	Body *BatchDeleteMembersRequestBody `json:"body,omitempty"`

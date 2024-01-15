@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AllowDbPrivilegeResponse Response Object
 type AllowDbPrivilegeResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

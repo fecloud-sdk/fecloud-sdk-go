@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateWhitelistRequestBody This is a auto create Body Object
 type UpdateWhitelistRequestBody struct {
 	Whitelist *UpdateWhitelistReq `json:"whitelist"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateWholeImageResponse Response Object
 type CreateWholeImageResponse struct {
-
-	// 异步任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

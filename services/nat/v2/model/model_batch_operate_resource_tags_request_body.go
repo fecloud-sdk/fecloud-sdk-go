@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// BatchOperateResourceTagsRequestBody 批量添加删除的请求体。
 type BatchOperateResourceTagsRequestBody struct {
-
-	// 功能说明：操作标识。 取值范围： create（创建） delete（删除）
 	Action BatchOperateResourceTagsRequestBodyAction `json:"action"`
 
-	// 标签列表。
 	Tags []Tag `json:"tags"`
 }
 

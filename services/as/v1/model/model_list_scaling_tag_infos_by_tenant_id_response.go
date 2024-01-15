@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListScalingTagInfosByTenantIdResponse Response Object
 type ListScalingTagInfosByTenantIdResponse struct {
-
-	// 资源标签。
 	Tags           *[]TagsMultiValue `json:"tags,omitempty"`
 	HttpStatusCode int               `json:"-"`
 }

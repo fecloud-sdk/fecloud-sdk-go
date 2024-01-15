@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowResourceQuotaRequest Request Object
 type ShowResourceQuotaRequest struct {
 }
 

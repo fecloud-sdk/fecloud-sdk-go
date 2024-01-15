@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaCreateKeypairRequestBody This is a auto create Body Object
 type NovaCreateKeypairRequestBody struct {
 	Keypair *NovaCreateKeypairOption `json:"keypair"`
 }

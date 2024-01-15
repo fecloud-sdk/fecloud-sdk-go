@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListSystemSecurityPoliciesResponse Response Object
 type ListSystemSecurityPoliciesResponse struct {
-
-	// 系统安全策略列表。
 	SystemSecurityPolicies *[]SystemSecurityPolicy `json:"system_security_policies,omitempty"`
 
-	// 请求ID。  注：自动生成 。
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

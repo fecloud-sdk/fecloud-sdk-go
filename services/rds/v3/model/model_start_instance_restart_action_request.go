@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// StartInstanceRestartActionRequest Request Object
 type StartInstanceRestartActionRequest struct {
-
-	// 语言
 	XLanguage *StartInstanceRestartActionRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *InstanceRestartRequsetBody `json:"body,omitempty"`

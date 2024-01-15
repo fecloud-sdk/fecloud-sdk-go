@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateConfigurationResponse Response Object
 type CreateConfigurationResponse struct {
 	Configuration  *ParamGroupInfoResult `json:"configuration,omitempty"`
 	HttpStatusCode int                   `json:"-"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// GlanceCreateImageMetadataRequest Request Object
 type GlanceCreateImageMetadataRequest struct {
 	Body *GlanceCreateImageMetadataRequestBody `json:"body,omitempty"`
 }

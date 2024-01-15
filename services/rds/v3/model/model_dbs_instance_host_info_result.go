@@ -7,14 +7,10 @@ import (
 )
 
 type DbsInstanceHostInfoResult struct {
-
-	// host  id
 	Id *string `json:"id,omitempty"`
 
-	// host地址
 	Host *string `json:"host,omitempty"`
 
-	// host 名称
 	HostName *string `json:"host_name,omitempty"`
 }
 

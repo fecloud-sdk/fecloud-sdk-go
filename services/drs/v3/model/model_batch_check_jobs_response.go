@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// BatchCheckJobsResponse Response Object
 type BatchCheckJobsResponse struct {
-
-	// 预检查响应体
 	Results *[]PostPreCheckResp `json:"results,omitempty"`
 
-	// 总数
 	Count          *int32 `json:"count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

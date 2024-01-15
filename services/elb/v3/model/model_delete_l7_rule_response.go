@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeleteL7RuleResponse Response Object
 type DeleteL7RuleResponse struct {
 	HttpStatusCode int `json:"-"`
 }

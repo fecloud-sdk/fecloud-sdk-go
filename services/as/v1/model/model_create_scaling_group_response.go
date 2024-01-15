@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateScalingGroupResponse Response Object
 type CreateScalingGroupResponse struct {
-
-	// 伸缩组ID
 	ScalingGroupId *string `json:"scaling_group_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

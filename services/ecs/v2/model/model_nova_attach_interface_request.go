@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// NovaAttachInterfaceRequest Request Object
 type NovaAttachInterfaceRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
 	Body *NovaAttachInterfaceRequestBody `json:"body,omitempty"`

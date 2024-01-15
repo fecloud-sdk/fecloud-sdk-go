@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowScalingPolicyRequest Request Object
 type ShowScalingPolicyRequest struct {
-
-	// 伸缩组ID。
 	ScalingPolicyId string `json:"scaling_policy_id"`
 }
 

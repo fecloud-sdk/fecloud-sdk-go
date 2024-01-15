@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchPrecheckReq 批量预检查请求体
 type BatchPrecheckReq struct {
-
-	// 批量预检查请求列表
 	Jobs []PreCheckInfo `json:"jobs"`
 }
 

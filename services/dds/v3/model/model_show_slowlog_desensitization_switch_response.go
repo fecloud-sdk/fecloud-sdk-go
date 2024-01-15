@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowSlowlogDesensitizationSwitchResponse Response Object
 type ShowSlowlogDesensitizationSwitchResponse struct {
-
-	// 开启或关闭慢日志脱敏，取值为on或off。
 	Status         *string `json:"status,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

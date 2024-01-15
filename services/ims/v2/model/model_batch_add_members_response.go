@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchAddMembersResponse Response Object
 type BatchAddMembersResponse struct {
-
-	// 异步任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateImageRequest Request Object
 type UpdateImageRequest struct {
-
-	// 镜像ID
 	ImageId string `json:"image_id"`
 
 	Body *[]UpdateImageRequestBody `json:"body,omitempty"`

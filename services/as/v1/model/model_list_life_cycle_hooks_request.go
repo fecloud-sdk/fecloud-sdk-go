@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListLifeCycleHooksRequest Request Object
 type ListLifeCycleHooksRequest struct {
-
-	// 伸缩组标识。
 	ScalingGroupId string `json:"scaling_group_id"`
 }
 

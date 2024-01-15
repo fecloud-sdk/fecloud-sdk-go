@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CopyInstanceResponse Response Object
 type CopyInstanceResponse struct {
-
-	// 备份记录ID。
 	BackupId       *string `json:"backup_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

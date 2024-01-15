@@ -9,31 +9,21 @@ import (
 	"strings"
 )
 
-// SlowLogStatisticsForLtsRequest 查询实例的慢日志对象
 type SlowLogStatisticsForLtsRequest struct {
-
-	// 开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 	StartTime string `json:"start_time"`
 
-	// 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 	EndTime string `json:"end_time"`
 
-	// 索引位置，偏移量。默认为0，表示从第一条数据开始查询。
 	Offset *int32 `json:"offset,omitempty"`
 
-	// 每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 	Limit *int32 `json:"limit,omitempty"`
 
-	// 语句类型，取空值，表示查询所有语句类型。
 	Type *SlowLogStatisticsForLtsRequestType `json:"type,omitempty"`
 
-	// 数据库名称。
 	Database *string `json:"database,omitempty"`
 
-	// 指定排序字段。\"executeTime\"，表示按照执行时间降序排序。字段为空或传入其他值，表示按照执行次数降序排序。
 	Sort *string `json:"sort,omitempty"`
 
-	// 排序顺序。默认desc。
 	Order *SlowLogStatisticsForLtsRequestOrder `json:"order,omitempty"`
 }
 

@@ -7,11 +7,8 @@ import (
 )
 
 type Tag struct {
-
-	// 标签键，最大长度36个unicode字符。
 	Key *string `json:"key,omitempty"`
 
-	// 标签值
 	Values *[]string `json:"values,omitempty"`
 }
 

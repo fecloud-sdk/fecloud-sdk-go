@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListOsVersionsResponse Response Object
 type ListOsVersionsResponse struct {
 	Body           *[]ListOsVersionsResponseBody `json:"body,omitempty"`
 	HttpStatusCode int                           `json:"-"`

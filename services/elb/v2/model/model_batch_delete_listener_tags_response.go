@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchDeleteListenerTagsResponse Response Object
 type BatchDeleteListenerTagsResponse struct {
 	HttpStatusCode int `json:"-"`
 }

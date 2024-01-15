@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// PoolRef
 type PoolRef struct {
-
-	// 后端服务器组ID。
 	Id string `json:"id"`
 }
 

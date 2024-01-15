@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// QueryStructProcessResp 查询灾备初始化进度
 type QueryStructProcessResp struct {
-
-	// 任务ID
 	JobId string `json:"job_id"`
 
-	// 错误码
 	ErrorCode *string `json:"error_code,omitempty"`
 
-	// 错误信息
 	ErrorMessage *string `json:"error_message,omitempty"`
 
 	StructProcess *StructProcessResp `json:"struct_process,omitempty"`

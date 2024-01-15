@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DeleteL7RuleRequest Request Object
 type DeleteL7RuleRequest struct {
-
-	// 策略ID。
 	L7policyId string `json:"l7policy_id"`
 
-	// 规则ID。
 	L7ruleId string `json:"l7rule_id"`
 }
 

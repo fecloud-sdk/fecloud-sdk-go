@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeletePrivateNatTagResponse Response Object
 type DeletePrivateNatTagResponse struct {
 	Body           *string `json:"body,omitempty"`
 	HttpStatusCode int     `json:"-"`

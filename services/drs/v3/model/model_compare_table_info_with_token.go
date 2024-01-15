@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// CompareTableInfoWithToken
 type CompareTableInfoWithToken struct {
-
-	// 表名。
 	TableName string `json:"table_name"`
 
-	// 该表的min token。
 	MinToken *string `json:"min_token,omitempty"`
 
-	// 该表的max token。
 	MaxToken *string `json:"max_token,omitempty"`
 }
 

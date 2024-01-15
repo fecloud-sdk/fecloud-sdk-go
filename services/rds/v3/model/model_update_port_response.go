@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdatePortResponse Response Object
 type UpdatePortResponse struct {
-
-	// 任务ID
 	WorkflowId     *string `json:"workflowId,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

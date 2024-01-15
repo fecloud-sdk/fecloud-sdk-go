@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowDiskUsageResponse Response Object
 type ShowDiskUsageResponse struct {
-
-	// 磁盘信息列表
 	Volumes        *[]DiskVolumes `json:"volumes,omitempty"`
 	HttpStatusCode int            `json:"-"`
 }

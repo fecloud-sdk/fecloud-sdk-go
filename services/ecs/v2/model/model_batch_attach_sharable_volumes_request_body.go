@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchAttachSharableVolumesRequestBody This is a auto create Body Object
 type BatchAttachSharableVolumesRequestBody struct {
-
-	// 共享磁盘需要挂载的弹性云服务器列表。
 	Serverinfo []BatchAttachSharableVolumesOption `json:"serverinfo"`
 }
 

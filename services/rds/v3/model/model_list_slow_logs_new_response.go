@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// ListSlowLogsNewResponse Response Object
 type ListSlowLogsNewResponse struct {
 	SlowLogList *[]SlowLog `json:"slow_log_list,omitempty"`
 
-	// 总记录数。
 	TotalRecord    *int32 `json:"total_record,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

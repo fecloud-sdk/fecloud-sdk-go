@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SignRequest Request Object
 type SignRequest struct {
 	Body *SignRequestBody `json:"body,omitempty"`
 }

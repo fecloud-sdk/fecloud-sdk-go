@@ -10,17 +10,12 @@ import (
 )
 
 type ModifyJobResp struct {
-
-	// 任务ID
 	Id string `json:"id"`
 
-	// 状态。 - success 成功 - failed 失败
 	Status ModifyJobRespStatus `json:"status"`
 
-	// 错误码
 	ErrorCode *string `json:"error_code,omitempty"`
 
-	// 错误信息
 	ErrorMsg *string `json:"error_msg,omitempty"`
 }
 

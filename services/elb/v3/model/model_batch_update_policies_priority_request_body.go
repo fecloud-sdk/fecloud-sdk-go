@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchUpdatePoliciesPriorityRequestBody This is a auto create Body Object
 type BatchUpdatePoliciesPriorityRequestBody struct {
-
-	// 转发策略的结构体
 	L7policies *[]BatchUpdatePriorityRequestBody `json:"l7policies,omitempty"`
 }
 

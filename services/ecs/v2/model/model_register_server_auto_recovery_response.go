@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// RegisterServerAutoRecoveryResponse Response Object
 type RegisterServerAutoRecoveryResponse struct {
 	HttpStatusCode int `json:"-"`
 }

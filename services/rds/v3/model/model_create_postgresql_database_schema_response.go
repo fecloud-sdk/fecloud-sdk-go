@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreatePostgresqlDatabaseSchemaResponse Response Object
 type CreatePostgresqlDatabaseSchemaResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

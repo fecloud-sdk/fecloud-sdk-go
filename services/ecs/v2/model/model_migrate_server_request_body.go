@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// MigrateServerRequestBody This is a auto create Body Object
 type MigrateServerRequestBody struct {
 	Migrate *MigrateServerOption `json:"migrate"`
 }

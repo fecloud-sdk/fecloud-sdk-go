@@ -7,11 +7,8 @@ import (
 )
 
 type ResourceTag struct {
-
-	// 标签key值。
 	Key string `json:"key"`
 
-	// 标签value。
 	Value string `json:"value"`
 }
 

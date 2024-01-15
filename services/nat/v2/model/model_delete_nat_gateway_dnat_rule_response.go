@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeleteNatGatewayDnatRuleResponse Response Object
 type DeleteNatGatewayDnatRuleResponse struct {
 	HttpStatusCode int `json:"-"`
 }

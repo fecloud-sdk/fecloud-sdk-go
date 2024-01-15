@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListBackupRecordsResponse Response Object
 type ListBackupRecordsResponse struct {
-
-	// 返回记录数。
 	TotalNum *int32 `json:"total_num,omitempty"`
 
-	// 备份信息的详情数组。
 	BackupRecordResponse *[]BackupRecordResponse `json:"backup_record_response,omitempty"`
 	HttpStatusCode       int                     `json:"-"`
 }

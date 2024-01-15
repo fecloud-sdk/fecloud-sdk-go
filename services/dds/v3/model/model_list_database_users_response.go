@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListDatabaseUsersResponse Response Object
 type ListDatabaseUsersResponse struct {
-
-	// 数据库用户信息。
 	Users *string `json:"users,omitempty"`
 
-	// 数据库用户总数。
 	TotalCount     *int32 `json:"total_count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

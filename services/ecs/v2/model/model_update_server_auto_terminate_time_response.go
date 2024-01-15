@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateServerAutoTerminateTimeResponse Response Object
 type UpdateServerAutoTerminateTimeResponse struct {
 	HttpStatusCode int `json:"-"`
 }

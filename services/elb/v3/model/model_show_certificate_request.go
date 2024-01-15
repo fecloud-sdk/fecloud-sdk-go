@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowCertificateRequest Request Object
 type ShowCertificateRequest struct {
-
-	// 证书ID。
 	CertificateId string `json:"certificate_id"`
 }
 

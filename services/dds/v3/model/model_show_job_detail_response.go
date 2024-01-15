@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowJobDetailResponse Response Object
 type ShowJobDetailResponse struct {
 	Job            *JobDetail `json:"job,omitempty"`
 	HttpStatusCode int        `json:"-"`

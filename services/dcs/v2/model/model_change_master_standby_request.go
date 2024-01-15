@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ChangeMasterStandbyRequest Request Object
 type ChangeMasterStandbyRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 }
 

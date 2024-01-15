@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// ListJobInfoDetailResponse Response Object
 type ListJobInfoDetailResponse struct {
 	Jobs *GetTaskDetailListRspJobs `json:"jobs,omitempty"`
 
-	// 任务数量。
 	Count          *int32 `json:"count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

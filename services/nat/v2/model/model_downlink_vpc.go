@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DownlinkVpc 私网NAT网关实例所属VPC实例。
 type DownlinkVpc struct {
-
-	// 私网NAT网关实例所属VPC的ID。
 	VpcId string `json:"vpc_id"`
 
-	// 私网NAT网关实例所属子网的ID。
 	VirsubnetId string `json:"virsubnet_id"`
 }
 

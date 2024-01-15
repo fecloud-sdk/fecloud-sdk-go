@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchCreateDeleteTransitIpTagsRequest Request Object
 type BatchCreateDeleteTransitIpTagsRequest struct {
-
-	// 中转IP的ID。
 	ResourceId string `json:"resource_id"`
 
 	Body *BatchOperateResourceTagsRequestBody `json:"body,omitempty"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ReinstallServerWithoutCloudInitRequest Request Object
 type ReinstallServerWithoutCloudInitRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
 	Body *ReinstallServerWithoutCloudInitRequestBody `json:"body,omitempty"`

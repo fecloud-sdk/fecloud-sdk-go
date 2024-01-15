@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DeleteConfigurationRequest Request Object
 type DeleteConfigurationRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 参数模板ID。
 	ConfigId string `json:"config_id"`
 }
 

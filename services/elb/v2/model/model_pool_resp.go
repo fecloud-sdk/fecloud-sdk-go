@@ -9,51 +9,35 @@ import (
 	"strings"
 )
 
-// PoolResp 后端云服务器组响应体
 type PoolResp struct {
-
-	// 后端云服务器组的ID
 	Id string `json:"id"`
 
-	// 后端云服务器组所在的项目ID。
 	ProjectId string `json:"project_id"`
 
-	// 后端云服务器组所在的项目ID。
 	TenantId string `json:"tenant_id"`
 
-	// 后端云服务器组的名称。
 	Name string `json:"name"`
 
-	// 后端云服务器组的描述信息
 	Description string `json:"description"`
 
-	// 后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 	AdminStateUp bool `json:"admin_state_up"`
 
-	// 后端云服务器组绑定的负载均衡器ID的列表。
 	Loadbalancers []ResourceList `json:"loadbalancers"`
 
-	// 后端云服务器组关联的监听器ID的列表。
 	Listeners []ResourceList `json:"listeners"`
 
-	// 后端云服务器组关联的后端云服务器ID的列表。
 	Members []ResourceList `json:"members"`
 
-	// 后端云服务器组关联的健康检查的ID。
 	HealthmonitorId string `json:"healthmonitor_id"`
 
 	SessionPersistence *SessionPersistence `json:"session_persistence"`
 
-	// 后端云服务器组的后端协议。
 	Protocol PoolRespProtocol `json:"protocol"`
 
-	// 后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 	LbAlgorithm PoolRespLbAlgorithm `json:"lb_algorithm"`
 
-	// 修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 	ProtectionStatus PoolRespProtectionStatus `json:"protection_status"`
 
-	// 设置保护的原因 >仅当protection_status为consoleProtection时有效。
 	ProtectionReason string `json:"protection_reason"`
 }
 

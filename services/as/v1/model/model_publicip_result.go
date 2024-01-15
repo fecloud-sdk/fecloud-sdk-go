@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// PublicipResult 弹性IP信息
 type PublicipResult struct {
 	Eip *EipResult `json:"eip,omitempty"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ProjectFlavorLimit
 type ProjectFlavorLimit struct {
 }
 

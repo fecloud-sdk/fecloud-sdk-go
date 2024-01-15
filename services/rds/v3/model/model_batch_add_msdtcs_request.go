@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchAddMsdtcsRequest Request Object
 type BatchAddMsdtcsRequest struct {
-
-	// 实例ID
 	InstanceId string `json:"instance_id"`
 
 	Body *AddMsdtcRequestBody `json:"body,omitempty"`

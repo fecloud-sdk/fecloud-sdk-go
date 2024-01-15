@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeletePrivateSnatResponse Response Object
 type DeletePrivateSnatResponse struct {
 	HttpStatusCode int `json:"-"`
 }

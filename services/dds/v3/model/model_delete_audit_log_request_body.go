@@ -7,8 +7,6 @@ import (
 )
 
 type DeleteAuditLogRequestBody struct {
-
-	// 文件名列表
 	FileNames []string `json:"file_names"`
 }
 

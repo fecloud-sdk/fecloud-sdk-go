@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListVolumeTagsResponse Response Object
 type ListVolumeTagsResponse struct {
-
-	// 所有云硬盘的标签信息
 	Tags           map[string][]string `json:"tags,omitempty"`
 	HttpStatusCode int                 `json:"-"`
 }

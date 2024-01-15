@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// BatchSetSmnRequest Request Object
 type BatchSetSmnRequest struct {
-
-	// 请求语言类型
 	XLanguage *BatchSetSmnRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchImportSmnInfoReq `json:"body,omitempty"`

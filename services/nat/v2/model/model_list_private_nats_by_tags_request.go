@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListPrivateNatsByTagsRequest Request Object
 type ListPrivateNatsByTagsRequest struct {
 	Body *ListTagResourceInstancesRequestBody `json:"body,omitempty"`
 }

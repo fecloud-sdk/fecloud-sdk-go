@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchProtectScalingInstancesRequest Request Object
 type BatchProtectScalingInstancesRequest struct {
-
-	// 实例ID。
 	ScalingGroupId string `json:"scaling_group_id"`
 
 	Body *BatchProtectInstancesOption `json:"body,omitempty"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// RestartOrFlushInstancesRequest Request Object
 type RestartOrFlushInstancesRequest struct {
 	Body *ChangeInstanceStatusBody `json:"body,omitempty"`
 }

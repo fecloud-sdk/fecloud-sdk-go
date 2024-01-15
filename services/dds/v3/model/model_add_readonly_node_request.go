@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AddReadonlyNodeRequest Request Object
 type AddReadonlyNodeRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *AddReadonlyNodeRequestBody `json:"body,omitempty"`

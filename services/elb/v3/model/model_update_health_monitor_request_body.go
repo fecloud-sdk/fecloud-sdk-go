@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateHealthMonitorRequestBody This is a auto create Body Object
 type UpdateHealthMonitorRequestBody struct {
 	Healthmonitor *UpdateHealthMonitorOption `json:"healthmonitor"`
 }

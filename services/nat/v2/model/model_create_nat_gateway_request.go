@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateNatGatewayRequest Request Object
 type CreateNatGatewayRequest struct {
 	Body *CreateNatGatewayRequestBody `json:"body,omitempty"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchAttachSharableVolumesRequest Request Object
 type BatchAttachSharableVolumesRequest struct {
-
-	// 共享磁盘ID。
 	VolumeId string `json:"volume_id"`
 
 	Body *BatchAttachSharableVolumesRequestBody `json:"body,omitempty"`

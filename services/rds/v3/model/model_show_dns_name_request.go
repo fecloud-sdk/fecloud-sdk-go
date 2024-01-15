@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// ShowDnsNameRequest Request Object
 type ShowDnsNameRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例域名类型，当前只支持\"private\"。
 	DnsType string `json:"dns_type"`
 }
 

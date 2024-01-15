@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchCreateKmsTagsRequest Request Object
 type BatchCreateKmsTagsRequest struct {
-
-	// 密钥ID
 	KeyId string `json:"key_id"`
 
 	Body *BatchCreateKmsTagsRequestBody `json:"body,omitempty"`

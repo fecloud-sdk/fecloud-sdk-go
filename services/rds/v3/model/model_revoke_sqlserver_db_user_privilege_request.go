@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// RevokeSqlserverDbUserPrivilegeRequest Request Object
 type RevokeSqlserverDbUserPrivilegeRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *SqlserverRevokeRequest `json:"body,omitempty"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ChangeOpsWindowRequest Request Object
 type ChangeOpsWindowRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *OpsWindowRequestBody `json:"body,omitempty"`

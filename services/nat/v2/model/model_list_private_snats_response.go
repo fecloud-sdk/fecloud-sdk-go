@@ -6,15 +6,11 @@ import (
 	"strings"
 )
 
-// ListPrivateSnatsResponse Response Object
 type ListPrivateSnatsResponse struct {
-
-	// 查询SNAT规则列表的响应体。
 	SnatRules *[]PrivateSnat `json:"snat_rules,omitempty"`
 
 	PageInfo *PageInfo `json:"page_info,omitempty"`
 
-	// 请求ID。
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

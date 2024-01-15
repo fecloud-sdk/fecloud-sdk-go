@@ -7,8 +7,6 @@ import (
 )
 
 type RevokeRequestBodyUsers struct {
-
-	// 数据库用户名称。
 	Name string `json:"name"`
 }
 

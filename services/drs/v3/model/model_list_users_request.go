@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// ListUsersRequest Request Object
 type ListUsersRequest struct {
-
-	// 请求语言类型
 	XLanguage *ListUsersRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 任务ID
 	JobId string `json:"job_id"`
 }
 

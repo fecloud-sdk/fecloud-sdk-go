@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateScalingConfigResponse Response Object
 type CreateScalingConfigResponse struct {
-
-	// 伸缩配置ID
 	ScalingConfigurationId *string `json:"scaling_configuration_id,omitempty"`
 	HttpStatusCode         int     `json:"-"`
 }

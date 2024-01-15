@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchCreateDeletePrivateNatTagsRequest Request Object
 type BatchCreateDeletePrivateNatTagsRequest struct {
-
-	// 私网NAT网关的ID。
 	ResourceId string `json:"resource_id"`
 
 	Body *BatchOperateResourceTagsRequestBody `json:"body,omitempty"`

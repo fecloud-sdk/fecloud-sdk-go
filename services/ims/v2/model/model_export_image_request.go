@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ExportImageRequest Request Object
 type ExportImageRequest struct {
-
-	// 镜像ID。
 	ImageId string `json:"image_id"`
 
 	Body *ExportImageRequestBody `json:"body,omitempty"`

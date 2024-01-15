@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateConfigurationsRequest Request Object
 type UpdateConfigurationsRequest struct {
-
-	// 实例ID
 	InstanceId string `json:"instance_id"`
 
 	Body *ModifyRedisConfigBody `json:"body,omitempty"`

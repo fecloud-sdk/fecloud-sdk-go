@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateServerGroupResponse Response Object
 type CreateServerGroupResponse struct {
 	ServerGroup    *CreateServerGroupResult `json:"server_group,omitempty"`
 	HttpStatusCode int                      `json:"-"`

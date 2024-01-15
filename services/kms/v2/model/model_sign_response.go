@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// SignResponse Response Object
 type SignResponse struct {
-
-	// 密钥ID。
 	KeyId *string `json:"key_id,omitempty"`
 
-	// 签名值，使用base64编码。
 	Signature      *string `json:"signature,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

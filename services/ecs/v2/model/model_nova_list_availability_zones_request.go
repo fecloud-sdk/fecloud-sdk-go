@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaListAvailabilityZonesRequest Request Object
 type NovaListAvailabilityZonesRequest struct {
 }
 

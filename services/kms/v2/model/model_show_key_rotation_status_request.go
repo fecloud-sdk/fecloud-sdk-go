@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowKeyRotationStatusRequest Request Object
 type ShowKeyRotationStatusRequest struct {
 	Body *OperateKeyRequestBody `json:"body,omitempty"`
 }

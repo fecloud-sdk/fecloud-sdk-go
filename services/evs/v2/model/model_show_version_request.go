@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ShowVersionRequest Request Object
 type ShowVersionRequest struct {
-
-	// 查询的目标版本号。 取值为：v1、v2、v3。
 	Version ShowVersionRequestVersion `json:"version"`
 }
 

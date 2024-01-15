@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowTransitIpRequest Request Object
 type ShowTransitIpRequest struct {
-
-	// 中转IP的ID。
 	TransitIpId string `json:"transit_ip_id"`
 }
 

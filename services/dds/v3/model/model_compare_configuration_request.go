@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CompareConfigurationRequest Request Object
 type CompareConfigurationRequest struct {
 	Body *DiffConfigurationRequest `json:"body,omitempty"`
 }

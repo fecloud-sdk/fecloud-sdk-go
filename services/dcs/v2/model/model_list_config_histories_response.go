@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListConfigHistoriesResponse Response Object
 type ListConfigHistoriesResponse struct {
-
-	// 实例参数修改记录个数
 	HistoryNum *int32 `json:"history_num,omitempty"`
 
-	// 实力参数修改记录详情
 	Histories      *[]HistoryInfo `json:"histories,omitempty"`
 	HttpStatusCode int            `json:"-"`
 }

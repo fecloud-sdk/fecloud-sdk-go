@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpgradeDatabaseVersionResponse Response Object
 type UpgradeDatabaseVersionResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

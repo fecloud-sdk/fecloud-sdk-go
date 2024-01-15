@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// QuotaDetailVolumes 云硬盘个数，键值对，包含：reserved（预留）、limit（最大）和in_use（已使用）。
 type QuotaDetailVolumes struct {
-
-	// 已使用的数量。
 	InUse int32 `json:"in_use"`
 
-	// 最大的数量。
 	Limit int32 `json:"limit"`
 
-	// 预留属性。
 	Reserved int32 `json:"reserved"`
 }
 

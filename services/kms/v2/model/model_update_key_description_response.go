@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateKeyDescriptionResponse Response Object
 type UpdateKeyDescriptionResponse struct {
 	KeyInfo        *KeyDescriptionInfo `json:"key_info,omitempty"`
 	HttpStatusCode int                 `json:"-"`

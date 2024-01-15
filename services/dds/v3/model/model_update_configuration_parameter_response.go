@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateConfigurationParameterResponse Response Object
 type UpdateConfigurationParameterResponse struct {
 	HttpStatusCode int `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreatePrivateSnatRequest Request Object
 type CreatePrivateSnatRequest struct {
 	Body *CreatePrivateSnatOptionBody `json:"body,omitempty"`
 }

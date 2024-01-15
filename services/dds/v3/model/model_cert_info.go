@@ -10,11 +10,8 @@ import (
 )
 
 type CertInfo struct {
-
-	// 证书种类
 	Category CertInfoCategory `json:"category"`
 
-	// 证书下载链接
 	DownloadLink string `json:"download_link"`
 }
 

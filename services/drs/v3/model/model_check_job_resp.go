@@ -9,22 +9,15 @@ import (
 	"strings"
 )
 
-// CheckJobResp 响应体
 type CheckJobResp struct {
-
-	// 任务id。
 	Id string `json:"id"`
 
-	// 测试结果。 - true：成功 - false：失败
 	Status CheckJobRespStatus `json:"status"`
 
-	// 错误码。
 	ErrorCode *string `json:"error_code,omitempty"`
 
-	// 错误信息。
 	ErrorMsg *string `json:"error_msg,omitempty"`
 
-	// 是否成功
 	Success *bool `json:"success,omitempty"`
 }
 

@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// BatchStartJobsRequest Request Object
 type BatchStartJobsRequest struct {
-
-	// 请求语言类型
 	XLanguage *BatchStartJobsRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchStartJobReq `json:"body,omitempty"`

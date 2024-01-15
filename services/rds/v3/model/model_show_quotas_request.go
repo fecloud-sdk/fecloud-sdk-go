@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ShowQuotasRequest Request Object
 type ShowQuotasRequest struct {
-
-	// 语言
 	XLanguage *ShowQuotasRequestXLanguage `json:"X-Language,omitempty"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteAuditLogResponse Response Object
 type DeleteAuditLogResponse struct {
-
-	// 任务ID
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListPoolsResponse Response Object
 type ListPoolsResponse struct {
-
-	// 后端云服务器对象组列表
 	Pools          *[]PoolResp `json:"pools,omitempty"`
 	HttpStatusCode int         `json:"-"`
 }

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// DefaultRootDb 目标实例根节点库信息体
 type DefaultRootDb struct {
-
-	// 库名。
 	DbName *string `json:"db_name,omitempty"`
 
-	// 编码格式。
 	DbEncoding *string `json:"db_encoding,omitempty"`
 }
 

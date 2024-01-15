@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ListCollationsRequest Request Object
 type ListCollationsRequest struct {
-
-	// 语言
 	XLanguage *ListCollationsRequestXLanguage `json:"X-Language,omitempty"`
 }
 

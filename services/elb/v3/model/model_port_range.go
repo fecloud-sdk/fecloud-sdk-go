@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// PortRange 端口监听范围（闭区间)，最多指定20个端口组，每个组范围不可有重叠部分 >仅当protocol_port为0时可以传入。
 type PortRange struct {
-
-	// 起始端口
 	StartPort *int32 `json:"start_port,omitempty"`
 
-	// 结束端口，需大于等于起始端口
 	EndPort *int32 `json:"end_port,omitempty"`
 }
 

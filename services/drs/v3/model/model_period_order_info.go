@@ -9,16 +9,11 @@ import (
 	"strings"
 )
 
-// PeriodOrderInfo 包年/包月信息体
 type PeriodOrderInfo struct {
-
-	// 订购周期类型。 取值范围： - 2：表示周期类型为月。 - 3：表示周期类型为年。
 	PeriodType *PeriodOrderInfoPeriodType `json:"period_type,omitempty"`
 
-	// 订购周期数。 取值范围： - period_type=2（周期类型为月）时，取值为[1，9]。 - period_type=3（周期类型为年）时，取值为[1，3]。
 	PeriodNum *int32 `json:"period_num,omitempty"`
 
-	// 是否自动续订。 取值范围： - 0：表示不自动续订。 - 1：表示自动续订。
 	IsAutoRenew *PeriodOrderInfoIsAutoRenew `json:"is_auto_renew,omitempty"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateConfigurationParameterRequest Request Object
 type UpdateConfigurationParameterRequest struct {
-
-	// 参数模板ID。
 	ConfigId string `json:"config_id"`
 
 	Body *UpdateConfigurationParameterRequestBody `json:"body,omitempty"`

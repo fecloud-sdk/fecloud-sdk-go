@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SetPostgresqlDbUserPwdResponse Response Object
 type SetPostgresqlDbUserPwdResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

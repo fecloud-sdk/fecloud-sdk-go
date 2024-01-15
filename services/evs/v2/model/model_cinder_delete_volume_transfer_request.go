@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CinderDeleteVolumeTransferRequest Request Object
 type CinderDeleteVolumeTransferRequest struct {
-
-	// 云硬盘过户记录ID
 	TransferId string `json:"transfer_id"`
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateNatGatewayRequestBody 更新公网NAT网关实例的请求体
 type UpdateNatGatewayRequestBody struct {
 	NatGateway *UpdateNatGatewayOption `json:"nat_gateway"`
 }

@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// ChangeOpsWindowRequest Request Object
 type ChangeOpsWindowRequest struct {
-
-	// 语言
 	XLanguage *ChangeOpsWindowRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *OpsWindowRequest `json:"body,omitempty"`

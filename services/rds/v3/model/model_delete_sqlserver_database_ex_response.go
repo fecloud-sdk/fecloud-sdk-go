@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteSqlserverDatabaseExResponse Response Object
 type DeleteSqlserverDatabaseExResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

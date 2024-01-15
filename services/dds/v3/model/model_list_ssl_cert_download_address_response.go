@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListSslCertDownloadAddressResponse Response Object
 type ListSslCertDownloadAddressResponse struct {
-
-	// 证书列表
 	Certs          *[]CertInfo `json:"certs,omitempty"`
 	HttpStatusCode int         `json:"-"`
 }

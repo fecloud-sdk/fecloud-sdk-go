@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateMigrationTaskRequest Request Object
 type CreateMigrationTaskRequest struct {
 	Body *CreateMigrationTaskBody `json:"body,omitempty"`
 }

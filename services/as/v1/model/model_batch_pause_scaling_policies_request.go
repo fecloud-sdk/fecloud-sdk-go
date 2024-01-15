@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchPauseScalingPoliciesRequest Request Object
 type BatchPauseScalingPoliciesRequest struct {
 	Body *BatchPauseScalingPoliciesOption `json:"body,omitempty"`
 }

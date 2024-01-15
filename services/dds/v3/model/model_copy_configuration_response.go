@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CopyConfigurationResponse Response Object
 type CopyConfigurationResponse struct {
-
-	// 复制后的参数模板ID。
 	ConfigurationId *string `json:"configuration_id,omitempty"`
 	HttpStatusCode  int     `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// AddServerGroupMemberRequestBody This is a auto create Body Object
 type AddServerGroupMemberRequestBody struct {
 	AddMember *ServerGroupMember `json:"add_member"`
 }

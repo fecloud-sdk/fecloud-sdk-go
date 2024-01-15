@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteLoadBalancerForceRequest Request Object
 type DeleteLoadBalancerForceRequest struct {
-
-	// 负载均衡器ID。
 	LoadbalancerId string `json:"loadbalancer_id"`
 }
 

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// GetDataTransformationResp 数据加工行过滤配置信息
 type GetDataTransformationResp struct {
-
-	// 数据加工总数。
 	TotalCount *int64 `json:"total_count,omitempty"`
 
-	// 数据过滤配置信息。
 	FilterConditions *[]DataTransformationInfo `json:"filter_conditions,omitempty"`
 }
 

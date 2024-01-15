@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowQuotaResponse Response Object
 type ShowQuotaResponse struct {
-
-	// 请求ID。  注：自动生成 。
 	RequestId *string `json:"request_id,omitempty"`
 
 	Quota          *Quota `json:"quota,omitempty"`

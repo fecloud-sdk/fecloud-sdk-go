@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ShowL7RuleRequest Request Object
 type ShowL7RuleRequest struct {
-
-	// 7层转发策略。
 	L7policyId string `json:"l7policy_id"`
 
-	// 7层转发规则。
 	L7ruleId string `json:"l7rule_id"`
 }
 

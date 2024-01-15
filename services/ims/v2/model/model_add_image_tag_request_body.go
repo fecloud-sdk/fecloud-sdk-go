@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// AddImageTagRequestBody 请求参数
 type AddImageTagRequestBody struct {
 	Tag *ResourceTag `json:"tag"`
 }

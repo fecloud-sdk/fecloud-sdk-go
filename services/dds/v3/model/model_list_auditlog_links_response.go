@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListAuditlogLinksResponse Response Object
 type ListAuditlogLinksResponse struct {
-
-	// 审计日志下载链接列表，有效时间5分钟。
 	Links          *[]string `json:"links,omitempty"`
 	HttpStatusCode int       `json:"-"`
 }

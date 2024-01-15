@@ -7,11 +7,8 @@ import (
 )
 
 type MsdtcHostOption struct {
-
-	// 主机名称 hostname
 	HostName string `json:"host_name"`
 
-	// 主机ip
 	Ip string `json:"ip"`
 }
 

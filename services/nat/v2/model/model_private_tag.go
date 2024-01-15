@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// PrivateTag 标签。
 type PrivateTag struct {
-
-	// 标签key值。
 	Key string `json:"key"`
 
-	// 标签value。
 	Value string `json:"value"`
 }
 

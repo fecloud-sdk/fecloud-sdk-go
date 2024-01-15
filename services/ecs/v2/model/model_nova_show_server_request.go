@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// NovaShowServerRequest Request Object
 type NovaShowServerRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 
-	// 微版本头
 	OpenStackAPIVersion *string `json:"OpenStack-API-Version,omitempty"`
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// QueryDbParamsResp 数据库参数信息响应体
 type QueryDbParamsResp struct {
 	Params *[]Params `json:"params,omitempty"`
 }

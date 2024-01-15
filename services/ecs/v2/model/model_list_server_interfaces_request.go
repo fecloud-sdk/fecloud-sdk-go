@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListServerInterfacesRequest Request Object
 type ListServerInterfacesRequest struct {
-
-	// 云服务器ID。
 	ServerId string `json:"server_id"`
 }
 

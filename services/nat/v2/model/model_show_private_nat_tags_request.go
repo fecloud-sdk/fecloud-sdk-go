@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowPrivateNatTagsRequest Request Object
 type ShowPrivateNatTagsRequest struct {
-
-	// 私网NAT网关的ID。
 	ResourceId string `json:"resource_id"`
 }
 

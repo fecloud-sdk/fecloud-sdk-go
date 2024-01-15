@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// GlanceDeleteImageRequest Request Object
 type GlanceDeleteImageRequest struct {
-
-	// 镜像ID
 	ImageId string `json:"image_id"`
 
 	Body *GlanceDeleteImageRequestBody `json:"body,omitempty"`

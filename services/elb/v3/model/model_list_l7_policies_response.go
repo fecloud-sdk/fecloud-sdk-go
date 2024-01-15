@@ -6,15 +6,11 @@ import (
 	"strings"
 )
 
-// ListL7PoliciesResponse Response Object
 type ListL7PoliciesResponse struct {
-
-	// 请求ID。  注：自动生成 。
 	RequestId *string `json:"request_id,omitempty"`
 
 	PageInfo *PageInfo `json:"page_info,omitempty"`
 
-	// 转发策略对象列表。
 	L7policies     *[]L7Policy `json:"l7policies,omitempty"`
 	HttpStatusCode int         `json:"-"`
 }

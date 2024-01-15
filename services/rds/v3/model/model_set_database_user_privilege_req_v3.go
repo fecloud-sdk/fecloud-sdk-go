@@ -7,14 +7,10 @@ import (
 )
 
 type SetDatabaseUserPrivilegeReqV3 struct {
-
-	// 是否设置所有用户。
 	AllUsers bool `json:"all_users"`
 
-	// 数据库用户名。
 	UserName *string `json:"user_name,omitempty"`
 
-	// 是否为只读权限。
 	Readonly bool `json:"readonly"`
 }
 

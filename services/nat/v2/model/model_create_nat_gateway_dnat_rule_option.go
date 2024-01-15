@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateNatGatewayDnatRuleOption 创建DNAT规则的请求体。
 type CreateNatGatewayDnatRuleOption struct {
 	DnatRule *CreateNatGatewayDnatOption `json:"dnat_rule"`
 }

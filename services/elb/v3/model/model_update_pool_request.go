@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdatePoolRequest Request Object
 type UpdatePoolRequest struct {
-
-	// 后端服务器组ID。
 	PoolId string `json:"pool_id"`
 
 	Body *UpdatePoolRequestBody `json:"body,omitempty"`

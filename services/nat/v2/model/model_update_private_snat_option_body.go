@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdatePrivateSnatOptionBody 更新SNAT规则的请求体。
 type UpdatePrivateSnatOptionBody struct {
 	SnatRule *UpdatePrivateSnatOption `json:"snat_rule"`
 }

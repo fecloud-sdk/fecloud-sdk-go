@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateLoadbalancerTagsRequestBody This is a auto create Body Object
 type CreateLoadbalancerTagsRequestBody struct {
 	Tag *ResourceTag `json:"tag"`
 }

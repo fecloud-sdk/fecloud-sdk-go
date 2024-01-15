@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListConfigurationsResponse Response Object
 type ListConfigurationsResponse struct {
-
-	// 总记录数。
 	TotalCount *int32 `json:"total_count,omitempty"`
 
-	// 参数模板列表。
 	Configurations *[]ListConfigurationsResult `json:"configurations,omitempty"`
 	HttpStatusCode int                         `json:"-"`
 }

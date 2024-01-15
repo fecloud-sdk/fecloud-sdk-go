@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// ListSlowlogForLtsRequest Request Object
 type ListSlowlogForLtsRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 语言。默认en-us。
 	XLanguage *ListSlowlogForLtsRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *SlowlogForLtsRequest `json:"body,omitempty"`

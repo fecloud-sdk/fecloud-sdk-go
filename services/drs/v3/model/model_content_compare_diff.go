@@ -6,19 +6,13 @@ import (
 	"strings"
 )
 
-// ContentCompareDiff
 type ContentCompareDiff struct {
-
-	// 查询目标库的SQL。
 	TargetSelectSql *string `json:"target_select_sql,omitempty"`
 
-	// 查询源库的SQL。
 	SourceSelectSql *string `json:"source_select_sql,omitempty"`
 
-	// 源库KEY值列表。
 	SourceKeyValue []string `json:"source_key_value"`
 
-	// 目标库KEY值列表。
 	TargetKeyValue []string `json:"target_key_value"`
 }
 

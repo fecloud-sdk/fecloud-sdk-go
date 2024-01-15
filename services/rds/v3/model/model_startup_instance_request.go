@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// StartupInstanceRequest Request Object
 type StartupInstanceRequest struct {
-
-	// 语言
 	XLanguage *StartupInstanceRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 }
 

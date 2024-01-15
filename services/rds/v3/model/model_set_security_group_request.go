@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// SetSecurityGroupRequest Request Object
 type SetSecurityGroupRequest struct {
-
-	// 语言
 	XLanguage *SetSecurityGroupRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *SecurityGroupRequest `json:"body,omitempty"`

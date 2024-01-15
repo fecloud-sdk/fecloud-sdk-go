@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// AddServerGroupMemberResponse Response Object
 type AddServerGroupMemberResponse struct {
 	HttpStatusCode int `json:"-"`
 }

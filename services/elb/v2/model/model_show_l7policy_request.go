@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowL7policyRequest Request Object
 type ShowL7policyRequest struct {
-
-	// 转发策略id
 	L7policyId string `json:"l7policy_id"`
 }
 

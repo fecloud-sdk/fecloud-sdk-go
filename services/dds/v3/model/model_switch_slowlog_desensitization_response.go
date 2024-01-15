@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SwitchSlowlogDesensitizationResponse Response Object
 type SwitchSlowlogDesensitizationResponse struct {
 	HttpStatusCode int `json:"-"`
 }

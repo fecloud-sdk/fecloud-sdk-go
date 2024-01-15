@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AddImageTagRequest Request Object
 type AddImageTagRequest struct {
-
-	// 镜像ID。
 	ImageId string `json:"image_id"`
 
 	Body *AddImageTagRequestBody `json:"body,omitempty"`

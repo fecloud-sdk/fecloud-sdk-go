@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListStatisticsOfRunningInstancesResponse Response Object
 type ListStatisticsOfRunningInstancesResponse struct {
-
-	// 该租户下处于“运行中”状态的实例的统计信息。
 	Statistics     *[]InstanceStatistic `json:"statistics,omitempty"`
 	HttpStatusCode int                  `json:"-"`
 }

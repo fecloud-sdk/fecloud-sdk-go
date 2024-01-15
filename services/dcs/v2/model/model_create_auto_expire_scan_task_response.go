@@ -9,28 +9,19 @@ import (
 	"strings"
 )
 
-// CreateAutoExpireScanTaskResponse Response Object
 type CreateAutoExpireScanTaskResponse struct {
-
-	// 过期key扫描记录ID
 	Id *string `json:"id,omitempty"`
 
-	// 实例ID
 	InstanceId *string `json:"instance_id,omitempty"`
 
-	// 扫描任务状态
 	Status *CreateAutoExpireScanTaskResponseStatus `json:"status,omitempty"`
 
-	// 扫描方式
 	ScanType *CreateAutoExpireScanTaskResponseScanType `json:"scan_type,omitempty"`
 
-	// 扫描任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 	CreatedAt *string `json:"created_at,omitempty"`
 
-	// 扫描任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 	StartedAt *string `json:"started_at,omitempty"`
 
-	// 扫描任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 	FinishedAt     *string `json:"finished_at,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdatePrivateSnatResponse Response Object
 type UpdatePrivateSnatResponse struct {
-
-	// 请求ID。
 	RequestId *string `json:"request_id,omitempty"`
 
 	SnatRule       *PrivateSnat `json:"snat_rule,omitempty"`

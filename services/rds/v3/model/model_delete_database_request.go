@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// DeleteDatabaseRequest Request Object
 type DeleteDatabaseRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 需要删除的数据库名。
 	DbName string `json:"db_name"`
 }
 

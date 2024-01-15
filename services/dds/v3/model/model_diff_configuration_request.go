@@ -7,11 +7,8 @@ import (
 )
 
 type DiffConfigurationRequest struct {
-
-	// 需要进行比较的参数模板ID。
 	SourceConfigurationId string `json:"source_configuration_id"`
 
-	// 需要进行比较的参数模板ID。
 	TargetConfigurationId string `json:"target_configuration_id"`
 }
 

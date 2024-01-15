@@ -9,29 +9,21 @@ import (
 	"strings"
 )
 
-// SwitchoverResp 主备倒换响应体
 type SwitchoverResp struct {
-
-	// 任务ID
 	JobId *string `json:"job_id,omitempty"`
 
-	// 更新时间，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 	UpdatedAt *string `json:"updated_at,omitempty"`
 
 	SourceDb *EndpointVo `json:"source_db,omitempty"`
 
 	TargetDb *EndpointVo `json:"target_db,omitempty"`
 
-	// 任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
 	JobDirection *SwitchoverRespJobDirection `json:"job_direction,omitempty"`
 
-	// 目标库是否只读。
 	IsTargetReadonly *bool `json:"is_target_readonly,omitempty"`
 
-	// 错误信息。
 	ErrorMsg *string `json:"error_msg,omitempty"`
 
-	// 错误码。
 	ErrorCode *string `json:"error_code,omitempty"`
 }
 

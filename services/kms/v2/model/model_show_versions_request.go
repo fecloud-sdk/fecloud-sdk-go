@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowVersionsRequest Request Object
 type ShowVersionsRequest struct {
 }
 

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListAuditlogsResponse Response Object
 type ListAuditlogsResponse struct {
-
-	// 总记录数。
 	TotalRecord *int32 `json:"total_record,omitempty"`
 
-	// 审计日志具体信息。
 	AuditLogs      *[]ListAuditlogsResult `json:"audit_logs,omitempty"`
 	HttpStatusCode int                    `json:"-"`
 }

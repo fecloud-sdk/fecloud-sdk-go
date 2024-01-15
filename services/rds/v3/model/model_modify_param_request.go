@@ -7,8 +7,6 @@ import (
 )
 
 type ModifyParamRequest struct {
-
-	// 参数值。
 	Value string `json:"value"`
 }
 

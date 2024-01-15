@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// RestoreToExistingInstanceResponse Response Object
 type RestoreToExistingInstanceResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

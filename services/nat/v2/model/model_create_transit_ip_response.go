@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// CreateTransitIpResponse Response Object
 type CreateTransitIpResponse struct {
 	TransitIp *TransitIp `json:"transit_ip,omitempty"`
 
-	// 请求ID。
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

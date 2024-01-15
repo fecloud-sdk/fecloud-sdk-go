@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// PauseScalingPolicyRequest Request Object
 type PauseScalingPolicyRequest struct {
-
-	// 伸缩策略ID。
 	ScalingPolicyId string `json:"scaling_policy_id"`
 
 	Body *PauseScalingPolicyOption `json:"body,omitempty"`

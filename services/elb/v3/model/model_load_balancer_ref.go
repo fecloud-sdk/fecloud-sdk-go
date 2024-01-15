@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// LoadBalancerRef 负载均衡器信息
 type LoadBalancerRef struct {
-
-	// 负载均衡器ID。
 	Id *string `json:"id,omitempty"`
 }
 

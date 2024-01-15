@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateDiagnosisTaskResponse Response Object
 type CreateDiagnosisTaskResponse struct {
-
-	// 报告ID
 	ReportId       *string `json:"report_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListPrivateNatTagsResponse Response Object
 type ListPrivateNatTagsResponse struct {
-
-	// 请求id。
 	RequestId *string `json:"request_id,omitempty"`
 
-	// 标签。
 	Tags           *[]Tags `json:"tags,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

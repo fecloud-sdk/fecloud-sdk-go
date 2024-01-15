@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateEntityConfigurationRequest Request Object
 type UpdateEntityConfigurationRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *UpdateConfigurationParameterResult `json:"body,omitempty"`

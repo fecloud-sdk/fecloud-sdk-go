@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetAutoEnlargePolicyResponse Response Object
 type SetAutoEnlargePolicyResponse struct {
 	Body           *string `json:"body,omitempty"`
 	HttpStatusCode int     `json:"-"`

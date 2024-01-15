@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateSlavePriorityResponse Response Object
 type UpdateSlavePriorityResponse struct {
 	HttpStatusCode int `json:"-"`
 }

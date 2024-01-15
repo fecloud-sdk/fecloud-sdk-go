@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// KeyStoreStateInfo 密钥库状态详情
 type KeyStoreStateInfo struct {
-
-	// 密钥库ID
 	KeystoreId *string `json:"keystore_id,omitempty"`
 
-	// 密钥库状态
 	KeystoreState *string `json:"keystore_state,omitempty"`
 }
 

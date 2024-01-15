@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ProjectTagInfoResponse 项目标签信息。
 type ProjectTagInfoResponse struct {
-
-	// 标签键。
 	Key string `json:"key"`
 
-	// 标签值列表。
 	Values []string `json:"values"`
 }
 

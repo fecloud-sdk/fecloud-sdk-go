@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListMsdtcHostsResponse Response Object
 type ListMsdtcHostsResponse struct {
-
-	// host总数
 	TotalCount *int32 `json:"total_count,omitempty"`
 
-	// host列表
 	Hosts          *[]DbsInstanceHostInfoResult `json:"hosts,omitempty"`
 	HttpStatusCode int                          `json:"-"`
 }

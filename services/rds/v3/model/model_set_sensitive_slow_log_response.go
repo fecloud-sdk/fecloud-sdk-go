@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetSensitiveSlowLogResponse Response Object
 type SetSensitiveSlowLogResponse struct {
 	HttpStatusCode int `json:"-"`
 }

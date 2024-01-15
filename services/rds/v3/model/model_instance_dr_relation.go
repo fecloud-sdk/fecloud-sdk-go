@@ -6,15 +6,11 @@ import (
 	"strings"
 )
 
-// InstanceDrRelation 容灾实例信息。
 type InstanceDrRelation struct {
-
-	// 当前区域实例ID。
 	InstanceId *string `json:"instance_id,omitempty"`
 
 	MasterInstance *MasterInstance `json:"master_instance,omitempty"`
 
-	// 容灾实例信息列表。
 	SlaveInstances *[]SlaveInstance `json:"slave_instances,omitempty"`
 }
 

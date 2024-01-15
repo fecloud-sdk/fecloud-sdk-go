@@ -7,17 +7,12 @@ import (
 )
 
 type HistoryInfo struct {
-
-	// 修改记录ID
 	HistoryId *string `json:"history_id,omitempty"`
 
-	// 修改类型
 	Type *string `json:"type,omitempty"`
 
-	// 修改时间
 	CreatedAt *string `json:"created_at,omitempty"`
 
-	// 修改状态
 	Status *string `json:"status,omitempty"`
 }
 

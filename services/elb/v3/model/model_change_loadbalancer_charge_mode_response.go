@@ -6,19 +6,13 @@ import (
 	"strings"
 )
 
-// ChangeLoadbalancerChargeModeResponse Response Object
 type ChangeLoadbalancerChargeModeResponse struct {
-
-	// 转包周期下单成功的EIP ID列表
 	EipIdList *[]string `json:"eip_id_list,omitempty"`
 
-	// 转包周期下单成功的LB ID列表
 	LoadbalancerIdList *[]string `json:"loadbalancer_id_list,omitempty"`
 
-	// 转包周期订单号
 	OrderId *string `json:"order_id,omitempty"`
 
-	// 请求的UUIID
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

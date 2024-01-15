@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreatePrivateDnatOptionBody 创建DNAT规则的请求体。
 type CreatePrivateDnatOptionBody struct {
 	DnatRule *CreatePrivateDnatOption `json:"dnat_rule"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateScalingGroupRequest Request Object
 type UpdateScalingGroupRequest struct {
-
-	// 伸缩组ID
 	ScalingGroupId string `json:"scaling_group_id"`
 
 	Body *UpdateScalingGroupOption `json:"body,omitempty"`

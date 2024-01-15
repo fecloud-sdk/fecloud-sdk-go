@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// SetDatabaseUserPrivilegeRequest Request Object
 type SetDatabaseUserPrivilegeRequest struct {
-
-	// 实例ID
 	InstanceId string `json:"instance_id"`
 
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
 	Body *SetDatabaseUserPrivilegeReqV3 `json:"body,omitempty"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListPrivateNatTagsRequest Request Object
 type ListPrivateNatTagsRequest struct {
 }
 

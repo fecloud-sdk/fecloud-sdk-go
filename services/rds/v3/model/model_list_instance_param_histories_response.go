@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListInstanceParamHistoriesResponse Response Object
 type ListInstanceParamHistoriesResponse struct {
-
-	// 历史记录总数
 	TotalCount *int32 `json:"total_count,omitempty"`
 
-	// host列表
 	Histories      *[]ParamGroupHistoryResult `json:"histories,omitempty"`
 	HttpStatusCode int                        `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateImageRequest Request Object
 type CreateImageRequest struct {
 	Body *CreateImageRequestBody `json:"body,omitempty"`
 }

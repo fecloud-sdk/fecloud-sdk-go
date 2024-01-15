@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListImageByTagsRequest Request Object
 type ListImageByTagsRequest struct {
 	Body *ListImageByTagsRequestBody `json:"body,omitempty"`
 }

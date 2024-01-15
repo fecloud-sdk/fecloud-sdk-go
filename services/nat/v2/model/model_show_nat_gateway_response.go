@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowNatGatewayResponse Response Object
 type ShowNatGatewayResponse struct {
 	NatGateway     *NatGatewayResponseBody `json:"nat_gateway,omitempty"`
 	HttpStatusCode int                     `json:"-"`

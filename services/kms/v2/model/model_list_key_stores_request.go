@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListKeyStoresRequest Request Object
 type ListKeyStoresRequest struct {
-
-	// 指定查询返回记录条数，默认值10。
 	Limit *int32 `json:"limit,omitempty"`
 
-	// 索引位置，从offset指定的下一条数据开始查询。
 	Offset *int32 `json:"offset,omitempty"`
 }
 

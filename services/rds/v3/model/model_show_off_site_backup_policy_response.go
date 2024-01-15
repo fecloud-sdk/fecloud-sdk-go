@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowOffSiteBackupPolicyResponse Response Object
 type ShowOffSiteBackupPolicyResponse struct {
-
-	// 备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 	PolicyPara     *[]GetOffSiteBackupPolicy `json:"policy_para,omitempty"`
 	HttpStatusCode int                       `json:"-"`
 }

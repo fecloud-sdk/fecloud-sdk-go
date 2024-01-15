@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CopyImageInRegionRequest Request Object
 type CopyImageInRegionRequest struct {
-
-	// 镜像ID
 	ImageId string `json:"image_id"`
 
 	Body *CopyImageInRegionRequestBody `json:"body,omitempty"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchCreateDeletePrivateNatTagsResponse Response Object
 type BatchCreateDeletePrivateNatTagsResponse struct {
 	HttpStatusCode int `json:"-"`
 }

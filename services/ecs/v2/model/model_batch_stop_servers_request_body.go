@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchStopServersRequestBody This is a auto create Body Object
 type BatchStopServersRequestBody struct {
 	OsStop *BatchStopServersOption `json:"os-stop"`
 }

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// AddShardingNodeResponse Response Object
 type AddShardingNodeResponse struct {
-
-	// 任务ID。
 	JobId *string `json:"job_id,omitempty"`
 
-	// 订单ID，仅扩容包年包月实例的节点数量时返回该参数。
 	OrderId        *string `json:"order_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

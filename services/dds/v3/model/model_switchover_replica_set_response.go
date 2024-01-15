@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SwitchoverReplicaSetResponse Response Object
 type SwitchoverReplicaSetResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

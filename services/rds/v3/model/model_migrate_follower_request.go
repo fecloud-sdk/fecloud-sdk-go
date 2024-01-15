@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// MigrateFollowerRequest Request Object
 type MigrateFollowerRequest struct {
-
-	// 语言
 	XLanguage *MigrateFollowerRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *FollowerMigrateRequest `json:"body,omitempty"`

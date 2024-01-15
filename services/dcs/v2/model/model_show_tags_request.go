@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowTagsRequest Request Object
 type ShowTagsRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 }
 

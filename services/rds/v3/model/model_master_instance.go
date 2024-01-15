@@ -6,19 +6,13 @@ import (
 	"strings"
 )
 
-// MasterInstance 主实例信息。
 type MasterInstance struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 区域。
 	Region string `json:"region"`
 
-	// 项目ID。
 	ProjectId string `json:"project_id"`
 
-	// 项目名称。
 	ProjectName string `json:"project_name"`
 }
 

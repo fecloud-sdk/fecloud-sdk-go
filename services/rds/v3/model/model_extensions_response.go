@@ -7,23 +7,16 @@ import (
 )
 
 type ExtensionsResponse struct {
-
-	// 插件名称。
 	Name *string `json:"name,omitempty"`
 
-	// 数据库名称。
 	DatabaseName *string `json:"database_name,omitempty"`
 
-	// 插件版本。
 	Version *string `json:"version,omitempty"`
 
-	// 依赖预加载库。
 	SharedPreloadLibraries *string `json:"shared_preload_libraries,omitempty"`
 
-	// 是否创建。
 	Created *bool `json:"created,omitempty"`
 
-	// 插件描述。
 	Description *string `json:"description,omitempty"`
 }
 

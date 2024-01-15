@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetAuditlogPolicyResponse Response Object
 type SetAuditlogPolicyResponse struct {
 	HttpStatusCode int `json:"-"`
 }

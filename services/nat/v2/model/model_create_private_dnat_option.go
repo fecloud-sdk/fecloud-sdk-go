@@ -9,31 +9,21 @@ import (
 	"strings"
 )
 
-// CreatePrivateDnatOption 创建DNAT规则的请求体。
 type CreatePrivateDnatOption struct {
-
-	// DNAT规则的描述。
 	Description *string `json:"description,omitempty"`
 
-	// 中转IP的ID。
 	TransitIpId string `json:"transit_ip_id"`
 
-	// 网络接口ID，支持计算、ELB、VIP等实例的网络接口。
 	NetworkInterfaceId *string `json:"network_interface_id,omitempty"`
 
-	// 私网NAT网关实例的ID。
 	GatewayId string `json:"gateway_id"`
 
-	// 协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 	Protocol *CreatePrivateDnatOptionProtocol `json:"protocol,omitempty"`
 
-	// 后端实例的私网IP地址。
 	PrivateIpAddress *string `json:"private_ip_address,omitempty"`
 
-	// 后端实例的端口号。
 	InternalServicePort *string `json:"internal_service_port,omitempty"`
 
-	// 中转IP的端口号。
 	TransitServicePort *string `json:"transit_service_port,omitempty"`
 }
 

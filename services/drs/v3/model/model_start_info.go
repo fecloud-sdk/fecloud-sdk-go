@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// StartInfo 启动任务请求体。
 type StartInfo struct {
-
-	// 任务id。
 	JobId string `json:"job_id"`
 
-	// 任务启动时间，时间戳格式精确到毫秒，例如：1679966489593，取值为空代表立即启动。
 	StartTime *string `json:"start_time,omitempty"`
 }
 

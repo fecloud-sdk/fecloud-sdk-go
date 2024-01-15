@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// ListPostgresqlExtensionResponse Response Object
 type ListPostgresqlExtensionResponse struct {
 	Extensions *[]ExtensionsResponse `json:"extensions,omitempty"`
 
-	// 总插件数。
 	TotalCount     *int32 `json:"total_count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

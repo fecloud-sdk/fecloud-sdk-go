@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeleteScalingConfigResponse Response Object
 type DeleteScalingConfigResponse struct {
 	HttpStatusCode int `json:"-"`
 }

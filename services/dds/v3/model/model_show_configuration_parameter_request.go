@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowConfigurationParameterRequest Request Object
 type ShowConfigurationParameterRequest struct {
-
-	// 参数模板ID。
 	ConfigId string `json:"config_id"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// StartDatabaseProxyResponse Response Object
 type StartDatabaseProxyResponse struct {
-
-	// 工作流ID
 	WorkflowId     *string `json:"workflow_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

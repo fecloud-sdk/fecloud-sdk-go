@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowRecyclePolicyRequest Request Object
 type ShowRecyclePolicyRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 }
 

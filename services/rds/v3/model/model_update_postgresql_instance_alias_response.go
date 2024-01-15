@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdatePostgresqlInstanceAliasResponse Response Object
 type UpdatePostgresqlInstanceAliasResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

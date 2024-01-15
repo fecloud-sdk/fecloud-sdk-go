@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowApiVersionRequest Request Object
 type ShowApiVersionRequest struct {
-
-	// API版本
 	Version string `json:"version"`
 }
 

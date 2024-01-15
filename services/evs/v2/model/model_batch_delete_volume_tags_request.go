@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchDeleteVolumeTagsRequest Request Object
 type BatchDeleteVolumeTagsRequest struct {
-
-	// 磁盘ID。
 	VolumeId string `json:"volume_id"`
 
 	Body *BatchDeleteVolumeTagsRequestBody `json:"body,omitempty"`

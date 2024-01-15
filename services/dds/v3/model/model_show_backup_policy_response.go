@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowBackupPolicyResponse Response Object
 type ShowBackupPolicyResponse struct {
 	BackupPolicy   *BackupPolicyItem `json:"backup_policy,omitempty"`
 	HttpStatusCode int               `json:"-"`

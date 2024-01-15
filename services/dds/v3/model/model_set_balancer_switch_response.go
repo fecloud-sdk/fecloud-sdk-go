@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SetBalancerSwitchResponse Response Object
 type SetBalancerSwitchResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

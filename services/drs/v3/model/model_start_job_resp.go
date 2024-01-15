@@ -9,19 +9,13 @@ import (
 	"strings"
 )
 
-// StartJobResp 启动任务返回体。
 type StartJobResp struct {
-
-	// 任务id
 	Id string `json:"id"`
 
-	// 状态。
 	Status *StartJobRespStatus `json:"status,omitempty"`
 
-	// 错误码。
 	ErrorCode *string `json:"error_code,omitempty"`
 
-	// 错误信息。
 	ErrorMsg *string `json:"error_msg,omitempty"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteScalingConfigRequest Request Object
 type DeleteScalingConfigRequest struct {
-
-	// 伸缩配置ID。
 	ScalingConfigurationId string `json:"scaling_configuration_id"`
 }
 

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// Tag
 type Tag struct {
-
-	// 键。最大长度128个unicode字符。key不能为空。
 	Key string `json:"key"`
 
-	// 值。每个值最大长度255个unicode字符。
 	Value string `json:"value"`
 }
 

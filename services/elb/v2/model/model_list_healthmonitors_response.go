@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListHealthmonitorsResponse Response Object
 type ListHealthmonitorsResponse struct {
-
-	// 健康检查对象的列表
 	Healthmonitors *[]HealthmonitorResp `json:"healthmonitors,omitempty"`
 	HttpStatusCode int                  `json:"-"`
 }

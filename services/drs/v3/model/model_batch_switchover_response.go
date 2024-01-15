@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// BatchSwitchoverResponse Response Object
 type BatchSwitchoverResponse struct {
-
-	// 批量主备倒换任务返回列表
 	Results *[]SwitchoverResp `json:"results,omitempty"`
 
-	// 总数
 	Count          *int32 `json:"count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

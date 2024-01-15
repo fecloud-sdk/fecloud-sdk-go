@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CompareConfigurationResponse Response Object
 type CompareConfigurationResponse struct {
-
-	// 参数模板之间的区别集合。
 	Differences    *[]DiffDetails `json:"differences,omitempty"`
 	HttpStatusCode int            `json:"-"`
 }

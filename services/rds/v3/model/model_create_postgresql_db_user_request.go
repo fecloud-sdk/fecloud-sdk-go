@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// CreatePostgresqlDbUserRequest Request Object
 type CreatePostgresqlDbUserRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *PostgresqlUserForCreation `json:"body,omitempty"`

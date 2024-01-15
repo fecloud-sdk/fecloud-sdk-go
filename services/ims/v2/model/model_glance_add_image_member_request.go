@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// GlanceAddImageMemberRequest Request Object
 type GlanceAddImageMemberRequest struct {
-
-	// 镜像id
 	ImageId string `json:"image_id"`
 
 	Body *GlanceAddImageMemberRequestBody `json:"body,omitempty"`

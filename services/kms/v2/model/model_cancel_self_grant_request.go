@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CancelSelfGrantRequest Request Object
 type CancelSelfGrantRequest struct {
 	Body *RevokeGrantRequestBody `json:"body,omitempty"`
 }

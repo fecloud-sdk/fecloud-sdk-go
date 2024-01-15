@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateLoadbalancerTagsResponse Response Object
 type CreateLoadbalancerTagsResponse struct {
 	HttpStatusCode int `json:"-"`
 }

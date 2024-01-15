@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateListenerTagsRequest Request Object
 type CreateListenerTagsRequest struct {
-
-	// 监听器ID。
 	ListenerId string `json:"listener_id"`
 
 	Body *CreateListenerTagsRequestBody `json:"body,omitempty"`

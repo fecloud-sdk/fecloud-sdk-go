@@ -7,8 +7,6 @@ import (
 )
 
 type WeakPasswordCheckRequestBody struct {
-
-	// 密码
 	Password string `json:"password"`
 }
 

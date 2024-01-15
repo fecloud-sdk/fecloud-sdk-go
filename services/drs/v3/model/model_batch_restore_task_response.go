@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// BatchRestoreTaskResponse Response Object
 type BatchRestoreTaskResponse struct {
-
-	// 批量续传返回列表
 	Results *[]RetryTaskResp `json:"results,omitempty"`
 
-	// 总数
 	Count          *int32 `json:"count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

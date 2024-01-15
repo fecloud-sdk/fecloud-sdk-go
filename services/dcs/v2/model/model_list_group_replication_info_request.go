@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListGroupReplicationInfoRequest Request Object
 type ListGroupReplicationInfoRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 }
 

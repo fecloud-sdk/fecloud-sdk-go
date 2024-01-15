@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchAddMsdtcsResponse Response Object
 type BatchAddMsdtcsResponse struct {
-
-	// 任务流id
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

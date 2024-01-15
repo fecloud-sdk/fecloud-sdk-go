@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ResourceId 资源ID
 type ResourceId struct {
-
-	// 资源ID
 	Id string `json:"id"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteIpFromDomainNameResponse Response Object
 type DeleteIpFromDomainNameResponse struct {
-
-	// 域名摘除ip的任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

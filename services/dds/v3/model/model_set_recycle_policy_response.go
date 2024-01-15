@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetRecyclePolicyResponse Response Object
 type SetRecyclePolicyResponse struct {
 	HttpStatusCode int `json:"-"`
 }

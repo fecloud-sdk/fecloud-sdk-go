@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchUnsetScalingInstancesStantbyRequest Request Object
 type BatchUnsetScalingInstancesStantbyRequest struct {
-
-	// 实例ID。
 	ScalingGroupId string `json:"scaling_group_id"`
 
 	Body *BatchExitStandByInstancesOption `json:"body,omitempty"`

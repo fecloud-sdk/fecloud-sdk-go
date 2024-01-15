@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowLoadbalancerTagsResponse Response Object
 type ShowLoadbalancerTagsResponse struct {
-
-	// 标签列表
 	Tags           *[]ResourceTag `json:"tags,omitempty"`
 	HttpStatusCode int            `json:"-"`
 }

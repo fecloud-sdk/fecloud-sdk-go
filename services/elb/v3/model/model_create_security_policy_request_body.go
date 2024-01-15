@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateSecurityPolicyRequestBody This is a auto create Body Object
 type CreateSecurityPolicyRequestBody struct {
 	SecurityPolicy *CreateSecurityPolicyOption `json:"security_policy"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchDeleteIpListRequest Request Object
 type BatchDeleteIpListRequest struct {
-
-	// IP地址组ID。
 	IpgroupId string `json:"ipgroup_id"`
 
 	Body *BatchDeleteIpListRequestBody `json:"body,omitempty"`

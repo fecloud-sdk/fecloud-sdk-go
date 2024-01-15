@@ -7,17 +7,12 @@ import (
 )
 
 type CompareTaskListResult struct {
-
-	// 对比任务列表。
 	CompareTaskList *[]CompareTaskList `json:"compare_task_list,omitempty"`
 
-	// 对比任务列表总数。
 	CompareTaskListCount *int32 `json:"compare_task_list_count,omitempty"`
 
-	// 错误信息
 	ErrorMsg *string `json:"error_msg,omitempty"`
 
-	// 错误码。
 	ErrorCode *string `json:"error_code,omitempty"`
 }
 

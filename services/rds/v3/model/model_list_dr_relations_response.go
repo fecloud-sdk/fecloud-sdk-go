@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListDrRelationsResponse Response Object
 type ListDrRelationsResponse struct {
 	InstanceDrRelations *[]InstanceDrRelation `json:"instance_dr_relations,omitempty"`
 	HttpStatusCode      int                   `json:"-"`

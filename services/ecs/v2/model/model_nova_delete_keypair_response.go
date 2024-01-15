@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaDeleteKeypairResponse Response Object
 type NovaDeleteKeypairResponse struct {
 	HttpStatusCode int `json:"-"`
 }

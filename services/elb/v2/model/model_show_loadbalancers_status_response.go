@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowLoadbalancersStatusResponse Response Object
 type ShowLoadbalancersStatusResponse struct {
 	Statuses       *StatusResp `json:"statuses,omitempty"`
 	HttpStatusCode int         `json:"-"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowJobDetailRequest Request Object
 type ShowJobDetailRequest struct {
-
-	// 任务ID。
 	Id string `json:"id"`
 }
 

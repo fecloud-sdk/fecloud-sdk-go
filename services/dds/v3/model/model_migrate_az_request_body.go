@@ -7,8 +7,6 @@ import (
 )
 
 type MigrateAzRequestBody struct {
-
-	// 迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 	TargetAzs string `json:"target_azs"`
 }
 

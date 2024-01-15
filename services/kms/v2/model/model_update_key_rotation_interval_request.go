@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateKeyRotationIntervalRequest Request Object
 type UpdateKeyRotationIntervalRequest struct {
 	Body *UpdateKeyRotationIntervalRequestBody `json:"body,omitempty"`
 }

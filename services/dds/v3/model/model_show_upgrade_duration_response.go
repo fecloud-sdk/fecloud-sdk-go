@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowUpgradeDurationResponse Response Object
 type ShowUpgradeDurationResponse struct {
-
-	// 升级策略列表
 	Strategies     *[]DurationStrategies `json:"strategies,omitempty"`
 	HttpStatusCode int                   `json:"-"`
 }

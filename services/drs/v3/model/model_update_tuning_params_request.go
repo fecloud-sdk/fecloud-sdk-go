@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// UpdateTuningParamsRequest Request Object
 type UpdateTuningParamsRequest struct {
-
-	// 租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
 	JobId string `json:"job_id"`
 
-	// 请求语言类型
 	XLanguage *UpdateTuningParamsRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *ModifyTuningParamsReq `json:"body,omitempty"`

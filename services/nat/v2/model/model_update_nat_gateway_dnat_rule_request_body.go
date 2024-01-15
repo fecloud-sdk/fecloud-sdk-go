@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateNatGatewayDnatRuleRequestBody 更新DNAT规则的响应体。
 type UpdateNatGatewayDnatRuleRequestBody struct {
 	DnatRule *UpdateNatGatewayDnatRuleOption `json:"dnat_rule"`
 }

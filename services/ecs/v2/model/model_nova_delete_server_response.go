@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaDeleteServerResponse Response Object
 type NovaDeleteServerResponse struct {
 	HttpStatusCode int `json:"-"`
 }

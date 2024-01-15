@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// AssociateServerVirtualIpResponse Response Object
 type AssociateServerVirtualIpResponse struct {
-
-	// 云服务器网卡ID。
 	PortId         *string `json:"port_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

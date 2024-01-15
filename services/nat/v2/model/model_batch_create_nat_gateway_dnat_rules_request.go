@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchCreateNatGatewayDnatRulesRequest Request Object
 type BatchCreateNatGatewayDnatRulesRequest struct {
 	Body *BatchCreateNatGatewayDnatRulesRequestBody `json:"body,omitempty"`
 }

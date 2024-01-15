@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ModifyRedisConfigBody 修改配置参数请求体
 type ModifyRedisConfigBody struct {
-
-	// 实例配置项数组。
 	RedisConfig *[]RedisConfig `json:"redis_config,omitempty"`
 }
 

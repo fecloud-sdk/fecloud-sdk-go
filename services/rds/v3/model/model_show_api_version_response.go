@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowApiVersionResponse Response Object
 type ShowApiVersionResponse struct {
 	Versions *ApiVersion `json:"versions,omitempty"`
 

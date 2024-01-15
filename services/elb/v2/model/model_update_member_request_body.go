@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateMemberRequestBody This is a auto create Body Object
 type UpdateMemberRequestBody struct {
 	Member *UpdateMemberReq `json:"member"`
 }

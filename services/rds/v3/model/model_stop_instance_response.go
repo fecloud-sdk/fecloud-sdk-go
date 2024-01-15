@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// StopInstanceResponse Response Object
 type StopInstanceResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

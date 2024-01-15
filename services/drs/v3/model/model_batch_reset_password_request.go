@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// BatchResetPasswordRequest Request Object
 type BatchResetPasswordRequest struct {
-
-	// 请求语言类型
 	XLanguage *BatchResetPasswordRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchModifyPwdReq `json:"body,omitempty"`

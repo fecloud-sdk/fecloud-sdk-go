@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SetReadOnlySwitchResponse Response Object
 type SetReadOnlySwitchResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

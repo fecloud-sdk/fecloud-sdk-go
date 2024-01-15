@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateHealthmonitorResponse Response Object
 type UpdateHealthmonitorResponse struct {
 	Healthmonitor  *HealthmonitorResp `json:"healthmonitor,omitempty"`
 	HttpStatusCode int                `json:"-"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteCertificateRequest Request Object
 type DeleteCertificateRequest struct {
-
-	// 证书ID。
 	CertificateId string `json:"certificate_id"`
 }
 

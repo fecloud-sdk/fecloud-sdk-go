@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ListResourceInstancesRequest Request Object
 type ListResourceInstancesRequest struct {
-
-	// 资源类型，枚举类：SCALING_GROUP_TAG。
 	ResourceType ListResourceInstancesRequestResourceType `json:"resource_type"`
 
 	Body *QueryTagsOption `json:"body,omitempty"`

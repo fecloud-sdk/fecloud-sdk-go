@@ -7,8 +7,6 @@ import (
 )
 
 type Quotas struct {
-
-	// 资源列表对象。
 	Resources *[]Resources `json:"resources,omitempty"`
 }
 

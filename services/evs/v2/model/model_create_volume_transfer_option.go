@@ -7,11 +7,8 @@ import (
 )
 
 type CreateVolumeTransferOption struct {
-
-	// 云硬盘过户记录的名称。最大支持255个字节。
 	Name string `json:"name"`
 
-	// 云硬盘ID。
 	VolumeId string `json:"volume_id"`
 }
 

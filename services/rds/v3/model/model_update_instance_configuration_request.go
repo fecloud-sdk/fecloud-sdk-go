@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// UpdateInstanceConfigurationRequest Request Object
 type UpdateInstanceConfigurationRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *UpdateInstanceConfigurationRequestBody `json:"body,omitempty"`

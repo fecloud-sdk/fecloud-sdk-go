@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// MigrateAzResponse Response Object
 type MigrateAzResponse struct {
-
-	// 任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

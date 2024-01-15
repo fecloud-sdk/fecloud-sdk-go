@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SwitchConfigurationRequest Request Object
 type SwitchConfigurationRequest struct {
-
-	// 参数模板ID。
 	ConfigId string `json:"config_id"`
 
 	Body *ApplyConfigurationRequestBody `json:"body,omitempty"`

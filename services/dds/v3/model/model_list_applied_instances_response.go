@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListAppliedInstancesResponse Response Object
 type ListAppliedInstancesResponse struct {
-
-	// 可以应用的实例列表。
 	Instances      *[]ApplicableInstancesInfo `json:"instances,omitempty"`
 	HttpStatusCode int                        `json:"-"`
 }

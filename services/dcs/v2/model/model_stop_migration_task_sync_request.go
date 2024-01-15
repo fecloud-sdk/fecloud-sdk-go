@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// StopMigrationTaskSyncRequest Request Object
 type StopMigrationTaskSyncRequest struct {
-
-	// 任务ID
 	TaskId string `json:"task_id"`
 }
 

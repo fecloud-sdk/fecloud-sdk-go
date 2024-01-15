@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchCreateVolumeTagsResponse Response Object
 type BatchCreateVolumeTagsResponse struct {
 	HttpStatusCode int `json:"-"`
 }

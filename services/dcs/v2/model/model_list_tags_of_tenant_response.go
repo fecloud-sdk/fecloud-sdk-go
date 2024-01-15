@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListTagsOfTenantResponse Response Object
 type ListTagsOfTenantResponse struct {
-
-	// 标签列表。
 	Tags           *[]Tag `json:"tags,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

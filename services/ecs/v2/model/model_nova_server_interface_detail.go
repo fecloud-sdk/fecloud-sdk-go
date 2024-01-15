@@ -6,22 +6,15 @@ import (
 	"strings"
 )
 
-// NovaServerInterfaceDetail
 type NovaServerInterfaceDetail struct {
-
-	// 网卡私网IP信息列表。
 	FixedIps []NovaServerInterfaceFixedIp `json:"fixed_ips"`
 
-	// 网卡Mac地址信息。
 	MacAddr string `json:"mac_addr"`
 
-	// 网卡端口所属网络ID。
 	NetId string `json:"net_id"`
 
-	// 网卡端口ID。
 	PortId string `json:"port_id"`
 
-	// 网卡端口状态。
 	PortState string `json:"port_state"`
 }
 

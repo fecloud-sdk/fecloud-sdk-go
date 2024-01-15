@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListAvailabilityZonesRequest Request Object
 type ListAvailabilityZonesRequest struct {
-
-	// AZ组。
 	PublicBorderGroup *string `json:"public_border_group,omitempty"`
 }
 

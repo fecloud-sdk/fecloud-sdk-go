@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteSecurityPolicyRequest Request Object
 type DeleteSecurityPolicyRequest struct {
-
-	// 自定义安全策略的ID。
 	SecurityPolicyId string `json:"security_policy_id"`
 }
 

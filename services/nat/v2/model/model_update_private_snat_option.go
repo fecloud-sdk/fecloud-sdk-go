@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// UpdatePrivateSnatOption 更新SNAT规则的请求体。
 type UpdatePrivateSnatOption struct {
-
-	// 中转IP的ID的列表。
 	TransitIpIds *[]string `json:"transit_ip_ids,omitempty"`
 
-	// SNAT规则的描述。
 	Description *string `json:"description,omitempty"`
 }
 

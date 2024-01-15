@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CancelSelfGrantResponse Response Object
 type CancelSelfGrantResponse struct {
 	HttpStatusCode int `json:"-"`
 }

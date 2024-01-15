@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateServerRequestBody This is a auto create Body Object
 type UpdateServerRequestBody struct {
 	Server *UpdateServerOption `json:"server"`
 }

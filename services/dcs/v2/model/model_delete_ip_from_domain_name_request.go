@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// DeleteIpFromDomainNameRequest Request Object
 type DeleteIpFromDomainNameRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 分片ID。
 	GroupId string `json:"group_id"`
 
-	// 节点ID。
 	NodeId string `json:"node_id"`
 }
 

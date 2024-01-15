@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DisassociateServerVirtualIpRequestBody This is a auto create Body Object
 type DisassociateServerVirtualIpRequestBody struct {
 	Nic *DisassociateServerVirtualIpOption `json:"nic"`
 }

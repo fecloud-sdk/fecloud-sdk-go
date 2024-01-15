@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// StopDatabaseProxyRequest Request Object
 type StopDatabaseProxyRequest struct {
-
-	// 语言
 	XLanguage *StopDatabaseProxyRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 }
 

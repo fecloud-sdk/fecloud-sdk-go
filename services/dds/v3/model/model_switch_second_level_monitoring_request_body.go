@@ -7,8 +7,6 @@ import (
 )
 
 type SwitchSecondLevelMonitoringRequestBody struct {
-
-	// 是否开启秒级监控。 取值为true为开启，取值为false为关闭。
 	Enabled bool `json:"enabled"`
 }
 

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ShowTransitIpTagsResponse Response Object
 type ShowTransitIpTagsResponse struct {
-
-	// 请求id。
 	RequestId *string `json:"request_id,omitempty"`
 
-	// 标签。
 	Tags           *[]Tag `json:"tags,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

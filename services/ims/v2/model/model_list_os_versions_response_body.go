@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListOsVersionsResponseBody 查询操作系统列表响应体
 type ListOsVersionsResponseBody struct {
-
-	// 操作系统的平台值，如RedHat等
 	Platform string `json:"platform"`
 
-	// 操作系统的详情值
 	VersionList []OsVersionInfo `json:"version_list"`
 }
 

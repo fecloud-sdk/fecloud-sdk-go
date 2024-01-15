@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// Tag DRS标签
 type Tag struct {
-
-	// 标签key
 	Key *string `json:"key,omitempty"`
 
-	// 标签value
 	Value *string `json:"value,omitempty"`
 }
 

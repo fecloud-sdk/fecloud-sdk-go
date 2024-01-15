@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// CompareObjectInfoWithToken
 type CompareObjectInfoWithToken struct {
-
-	// 库名。
 	DbName string `json:"db_name"`
 
-	// 该库下的表信息列表（带token）。
 	TableNameWithToken *[]CompareTableInfoWithToken `json:"table_name_with_token,omitempty"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateLoadBalancerRequest Request Object
 type UpdateLoadBalancerRequest struct {
-
-	// 负载均衡器ID。
 	LoadbalancerId string `json:"loadbalancer_id"`
 
 	Body *UpdateLoadBalancerRequestBody `json:"body,omitempty"`

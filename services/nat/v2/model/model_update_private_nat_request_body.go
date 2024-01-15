@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdatePrivateNatRequestBody 更新私网NAT网关实例的请求体。
 type UpdatePrivateNatRequestBody struct {
 	Gateway *UpdatePrivateNatOption `json:"gateway"`
 }

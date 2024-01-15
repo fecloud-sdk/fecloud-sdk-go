@@ -7,8 +7,6 @@ import (
 )
 
 type InstanceRestartRequsetBody struct {
-
-	// 空值
 	Restart *interface{} `json:"restart"`
 }
 

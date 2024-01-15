@@ -25,7 +25,7 @@ import (
 	"strings"
 )
 
-const DefaultEndpointReg = "^[a-z][a-z0-9-]+(\\.[a-z]{2,}-[a-z]+-\\d{1,2})?\\.(my)?(fecloud|myhwclouds).(com|cn)"
+const DefaultEndpointReg = "^[a-z][a-z0-9-]+(\\.[a-z]{2,}-[a-z]+-\\d{1,2})?\\.(my)?(orange-business).(com|cn)"
 
 type IDerivedCredential interface {
 	ProcessDerivedAuthParams(derivedAuthServiceName, regionId string) ICredential

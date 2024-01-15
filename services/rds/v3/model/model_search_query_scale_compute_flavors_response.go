@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SearchQueryScaleComputeFlavorsResponse Response Object
 type SearchQueryScaleComputeFlavorsResponse struct {
-
-	// 计算规格列表对象。
 	ComputeFlavorGroups *[]Computes `json:"compute_flavor_groups,omitempty"`
 	HttpStatusCode      int         `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListGrantsRequest Request Object
 type ListGrantsRequest struct {
 	Body *ListGrantsRequestBody `json:"body,omitempty"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListStatisticsOfRunningInstancesRequest Request Object
 type ListStatisticsOfRunningInstancesRequest struct {
 }
 

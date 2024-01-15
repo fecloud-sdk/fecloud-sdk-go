@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdatePoolResponse Response Object
 type UpdatePoolResponse struct {
 	Pool           *PoolResp `json:"pool,omitempty"`
 	HttpStatusCode int       `json:"-"`

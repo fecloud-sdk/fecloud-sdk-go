@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// SwitchConfigurationResponse Response Object
 type SwitchConfigurationResponse struct {
-
-	// 应用参数模板的异步任务ID。
 	JobId          *string `json:"job_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

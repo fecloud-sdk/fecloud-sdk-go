@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdatePoolRequestBody This is a auto create Body Object
 type UpdatePoolRequestBody struct {
 	Pool *UpdatePoolOption `json:"pool"`
 }

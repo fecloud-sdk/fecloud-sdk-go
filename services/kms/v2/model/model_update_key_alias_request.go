@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdateKeyAliasRequest Request Object
 type UpdateKeyAliasRequest struct {
 	Body *UpdateKeyAliasRequestBody `json:"body,omitempty"`
 }

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteListenerForceRequest Request Object
 type DeleteListenerForceRequest struct {
-
-	// 监听器ID。
 	ListenerId string `json:"listener_id"`
 }
 

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateRedirectPoolsExtendConfig 转发到的后端主机组的URL配置。
 type UpdateRedirectPoolsExtendConfig struct {
-
-	// 是否开启url重定向
 	RewriteUrlEnable *bool `json:"rewrite_url_enable,omitempty"`
 
 	RewriteUrlConfig *CreateRewriteUrlConfig `json:"rewrite_url_config,omitempty"`

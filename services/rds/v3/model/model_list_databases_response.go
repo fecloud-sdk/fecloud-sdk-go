@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListDatabasesResponse Response Object
 type ListDatabasesResponse struct {
-
-	// 数据库信息。
 	Databases *[]DatabaseForCreation `json:"databases,omitempty"`
 
-	// 总数。
 	TotalCount     *int32 `json:"total_count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

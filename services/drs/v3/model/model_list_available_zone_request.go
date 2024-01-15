@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ListAvailableZoneRequest Request Object
 type ListAvailableZoneRequest struct {
-
-	// 请求语言类型。
 	XLanguage *ListAvailableZoneRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *QueryAvailableNodeTypeReq `json:"body,omitempty"`

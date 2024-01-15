@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DisableKeyRequest Request Object
 type DisableKeyRequest struct {
 	Body *OperateKeyRequestBody `json:"body,omitempty"`
 }

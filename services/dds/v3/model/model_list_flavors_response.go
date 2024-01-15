@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListFlavorsResponse Response Object
 type ListFlavorsResponse struct {
-
-	// 实例规格信息列表。
 	Flavors        *[]Flavor `json:"flavors,omitempty"`
 	HttpStatusCode int       `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// QuotaList 配额信息。
 type QuotaList struct {
 	BackupGigabytes *QuotaDetailBackupGigabytes `json:"backup_gigabytes"`
 
@@ -14,7 +13,6 @@ type QuotaList struct {
 
 	Gigabytes *QuotaDetailGigabytes `json:"gigabytes"`
 
-	// 项目ID。
 	Id string `json:"id"`
 
 	Snapshots *QuotaDetailSnapshots `json:"snapshots"`

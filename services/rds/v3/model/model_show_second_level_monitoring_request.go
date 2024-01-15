@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ShowSecondLevelMonitoringRequest Request Object
 type ShowSecondLevelMonitoringRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// AddImageTagResponse Response Object
 type AddImageTagResponse struct {
 	HttpStatusCode int `json:"-"`
 }

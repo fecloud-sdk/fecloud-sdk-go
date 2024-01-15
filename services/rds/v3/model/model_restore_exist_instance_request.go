@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// RestoreExistInstanceRequest Request Object
 type RestoreExistInstanceRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
 	Body *RestoreExistingInstanceRequestBody `json:"body,omitempty"`

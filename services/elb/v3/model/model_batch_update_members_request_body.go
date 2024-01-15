@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchUpdateMembersRequestBody This is a auto create Body Object
 type BatchUpdateMembersRequestBody struct {
-
-	// 后端服务器对象。
 	Members []BatchUpdateMembersOption `json:"members"`
 }
 

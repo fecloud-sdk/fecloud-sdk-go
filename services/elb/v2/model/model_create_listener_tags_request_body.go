@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateListenerTagsRequestBody This is a auto create Body Object
 type CreateListenerTagsRequestBody struct {
 	Tag *ResourceTag `json:"tag"`
 }

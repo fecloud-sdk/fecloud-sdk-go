@@ -9,25 +9,17 @@ import (
 	"strings"
 )
 
-// CreatePrivateNatOption 创建私网NAT网关实例的请求体。
 type CreatePrivateNatOption struct {
-
-	// 私网NAT网关实例的名字。 私网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 	Name string `json:"name"`
 
-	// 私网NAT网关实例的描述。
 	Description *string `json:"description,omitempty"`
 
-	// 私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 	Spec *CreatePrivateNatOptionSpec `json:"spec,omitempty"`
 
-	// 私网NAT网关实例所属的VPC实例。
 	DownlinkVpcs []DownlinkVpcOption `json:"downlink_vpcs"`
 
-	// 标签列表
 	Tags *[]PrivateTag `json:"tags,omitempty"`
 
-	// 企业项目ID 创建私网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 	EnterpriseProjectId *string `json:"enterprise_project_id,omitempty"`
 }
 

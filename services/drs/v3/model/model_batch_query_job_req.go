@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchQueryJobReq 查询任务请求体
 type BatchQueryJobReq struct {
-
-	// 查询任务请求体
 	Jobs []string `json:"jobs"`
 }
 

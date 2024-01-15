@@ -9,25 +9,17 @@ import (
 	"strings"
 )
 
-// ErrorlogForLtsRequest 查询实例的错误日志对象
 type ErrorlogForLtsRequest struct {
-
-	// 开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 	StartTime string `json:"start_time"`
 
-	// 结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 	EndTime string `json:"end_time"`
 
-	// 日志级别，默认为ALL。
 	Level *ErrorlogForLtsRequestLevel `json:"level,omitempty"`
 
-	// 日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time和end_time之间。
 	LineNum *string `json:"line_num,omitempty"`
 
-	// 每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 	Limit *int32 `json:"limit,omitempty"`
 
-	// 搜索方式。默认forwards。配合line_num使用，以line_num为起点，向前搜索或向后搜索。
 	SearchType *string `json:"search_type,omitempty"`
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetSecondLevelMonitorResponse Response Object
 type SetSecondLevelMonitorResponse struct {
 	Body           *string `json:"body,omitempty"`
 	HttpStatusCode int     `json:"-"`

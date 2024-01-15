@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeleteSqlserverDatabaseResponse Response Object
 type DeleteSqlserverDatabaseResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

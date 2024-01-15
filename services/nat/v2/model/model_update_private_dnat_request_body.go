@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// UpdatePrivateDnatRequestBody 更新DNAT规则的请求体。
 type UpdatePrivateDnatRequestBody struct {
 	DnatRule *UpdatePrivateDnatOption `json:"dnat_rule,omitempty"`
 }

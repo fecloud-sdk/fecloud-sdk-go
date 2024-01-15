@@ -10,14 +10,10 @@ import (
 )
 
 type ContentCompareResultOverview struct {
-
-	// 源库名称。
 	SourceDbName string `json:"source_db_name"`
 
-	// 目标库名称。
 	TargetDbName string `json:"target_db_name"`
 
-	// 对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 	ContentCompareResult ContentCompareResultOverviewContentCompareResult `json:"content_compare_result"`
 }
 

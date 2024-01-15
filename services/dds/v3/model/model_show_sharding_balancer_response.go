@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowShardingBalancerResponse Response Object
 type ShowShardingBalancerResponse struct {
-
-	// 集群均衡是否打开。
 	IsOpen *bool `json:"is_open,omitempty"`
 
 	ActiveWindow   *BalancerActiveWindow `json:"active_window,omitempty"`

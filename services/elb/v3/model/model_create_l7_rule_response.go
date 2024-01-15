@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateL7RuleResponse Response Object
 type CreateL7RuleResponse struct {
-
-	// 请求ID。  注：自动生成 。
 	RequestId *string `json:"request_id,omitempty"`
 
 	Rule           *L7Rule `json:"rule,omitempty"`

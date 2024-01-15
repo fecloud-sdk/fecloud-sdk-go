@@ -9,16 +9,11 @@ import (
 	"strings"
 )
 
-// SetOnlineMigrationTaskResponse Response Object
 type SetOnlineMigrationTaskResponse struct {
-
-	// 迁移任务ID。
 	Id *string `json:"id,omitempty"`
 
-	// 迁移任务名称。
 	Name *string `json:"name,omitempty"`
 
-	// 迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 	Status         *SetOnlineMigrationTaskResponseStatus `json:"status,omitempty"`
 	HttpStatusCode int                                   `json:"-"`
 }

@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// ShowPrivateNatResponse Response Object
 type ShowPrivateNatResponse struct {
 	Gateway *PrivateNat `json:"gateway,omitempty"`
 
-	// 请求ID。
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

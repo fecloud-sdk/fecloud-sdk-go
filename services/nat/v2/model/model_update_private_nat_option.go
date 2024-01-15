@@ -9,16 +9,11 @@ import (
 	"strings"
 )
 
-// UpdatePrivateNatOption 更新私网NAT网关实例的请求体。
 type UpdatePrivateNatOption struct {
-
-	// 私网NAT网关实例的名字。 私网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 	Name *string `json:"name,omitempty"`
 
-	// 私网NAT网关的描述。
 	Description *string `json:"description,omitempty"`
 
-	// 私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 	Spec *UpdatePrivateNatOptionSpec `json:"spec,omitempty"`
 }
 

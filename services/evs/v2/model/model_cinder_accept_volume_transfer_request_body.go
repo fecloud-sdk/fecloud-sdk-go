@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CinderAcceptVolumeTransferRequestBody This is a auto create Body Object
 type CinderAcceptVolumeTransferRequestBody struct {
 	Accept *CinderAcceptVolumeTransferOption `json:"accept"`
 }

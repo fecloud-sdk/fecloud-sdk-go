@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// SetAuditlogPolicyRequest Request Object
 type SetAuditlogPolicyRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *SetAuditlogPolicyRequestBody `json:"body,omitempty"`

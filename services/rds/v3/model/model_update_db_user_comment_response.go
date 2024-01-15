@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateDbUserCommentResponse Response Object
 type UpdateDbUserCommentResponse struct {
-
-	// 操作结果。
 	Resp           *string `json:"resp,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

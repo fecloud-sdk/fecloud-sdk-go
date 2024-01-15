@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowNatGatewaySnatRuleRequest Request Object
 type ShowNatGatewaySnatRuleRequest struct {
-
-	// SNAT规则的ID。
 	SnatRuleId string `json:"snat_rule_id"`
 }
 

@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ShowMonitoringDataRequest Request Object
 type ShowMonitoringDataRequest struct {
-
-	// 请求语言类型
 	XLanguage *ShowMonitoringDataRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchQueryJobReq `json:"body,omitempty"`

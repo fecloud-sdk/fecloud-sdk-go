@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowFlavorRequest Request Object
 type ShowFlavorRequest struct {
-
-	// 规格ID。
 	FlavorId string `json:"flavor_id"`
 }
 

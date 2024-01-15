@@ -10,20 +10,14 @@ import (
 )
 
 type CompareTaskList struct {
-
-	// 对比任务的id。
 	CompareTaskId string `json:"compare_task_id"`
 
-	// 对比任务的类型。
 	CompareType string `json:"compare_type"`
 
-	// 对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 	CompareTaskStatus CompareTaskListCompareTaskStatus `json:"compare_task_status"`
 
-	// 对比开始时间。
 	CreateTime string `json:"create_time"`
 
-	// 对比结束时间。
 	EndTime *string `json:"end_time,omitempty"`
 }
 

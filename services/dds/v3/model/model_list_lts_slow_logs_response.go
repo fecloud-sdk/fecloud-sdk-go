@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListLtsSlowLogsResponse Response Object
 type ListLtsSlowLogsResponse struct {
-
-	// 慢日志具体信息。
 	SlowLogs       *[]SlowLogDetail `json:"slow_logs,omitempty"`
 	HttpStatusCode int              `json:"-"`
 }

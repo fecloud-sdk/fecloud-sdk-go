@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// BatchValidateConnectionsRequest Request Object
 type BatchValidateConnectionsRequest struct {
-
-	// 请求语言类型
 	XLanguage *BatchValidateConnectionsRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *BatchTestConnectionReq `json:"body,omitempty"`

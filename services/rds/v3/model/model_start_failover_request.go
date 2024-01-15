@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// StartFailoverRequest Request Object
 type StartFailoverRequest struct {
-
-	// 语言
 	XLanguage *StartFailoverRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *FailoverRequest `json:"body,omitempty"`

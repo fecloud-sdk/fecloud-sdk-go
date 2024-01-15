@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListenerRef 监听器
 type ListenerRef struct {
-
-	// 监听器ID。
 	Id string `json:"id"`
 }
 

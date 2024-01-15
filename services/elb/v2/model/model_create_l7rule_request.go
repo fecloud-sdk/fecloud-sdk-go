@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateL7ruleRequest Request Object
 type CreateL7ruleRequest struct {
-
-	// 转发策略id
 	L7policyId string `json:"l7policy_id"`
 
 	Body *CreateL7ruleRequestBody `json:"body,omitempty"`

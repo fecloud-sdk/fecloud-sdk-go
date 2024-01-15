@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ListInstancesByTagsResponse Response Object
 type ListInstancesByTagsResponse struct {
-
-	// 实例列表。
 	Instances *[]InstanceItem `json:"instances,omitempty"`
 
-	// 总记录数。
 	TotalCount     *int32 `json:"total_count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

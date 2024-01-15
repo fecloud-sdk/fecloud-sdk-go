@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeleteServersRequest Request Object
 type DeleteServersRequest struct {
 	Body *DeleteServersRequestBody `json:"body,omitempty"`
 }

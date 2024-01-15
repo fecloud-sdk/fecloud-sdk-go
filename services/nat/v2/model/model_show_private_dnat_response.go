@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-// ShowPrivateDnatResponse Response Object
 type ShowPrivateDnatResponse struct {
 	DnatRule *PrivateDnat `json:"dnat_rule,omitempty"`
 
-	// 请求ID。
 	RequestId      *string `json:"request_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

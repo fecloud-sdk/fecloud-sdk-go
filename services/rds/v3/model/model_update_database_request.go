@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// UpdateDatabaseRequest Request Object
 type UpdateDatabaseRequest struct {
-
-	// 语言
 	XLanguage *UpdateDatabaseRequestXLanguage `json:"X-Language,omitempty"`
 
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
 	Body *UpdateDatabaseReq `json:"body,omitempty"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CinderListAvailabilityZonesRequest Request Object
 type CinderListAvailabilityZonesRequest struct {
 }
 

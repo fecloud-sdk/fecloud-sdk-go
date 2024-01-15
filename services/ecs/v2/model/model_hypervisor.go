@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// Hypervisor hypervisor信息。
 type Hypervisor struct {
-
-	// hypervisor类型
 	HypervisorType *string `json:"hypervisor_type,omitempty"`
 
-	// hypervisor csd信息
 	CsdHypervisor *string `json:"csd_hypervisor,omitempty"`
 }
 

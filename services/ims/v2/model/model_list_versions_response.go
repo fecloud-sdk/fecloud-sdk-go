@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListVersionsResponse Response Object
 type ListVersionsResponse struct {
-
-	// 版本信息
 	Versions       *[]OsVersionResponse `json:"versions,omitempty"`
 	HttpStatusCode int                  `json:"-"`
 }

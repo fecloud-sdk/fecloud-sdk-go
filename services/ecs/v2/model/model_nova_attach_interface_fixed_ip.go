@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// NovaAttachInterfaceFixedIp
 type NovaAttachInterfaceFixedIp struct {
-
-	// IP地址。
 	IpAddress *string `json:"ip_address,omitempty"`
 }
 

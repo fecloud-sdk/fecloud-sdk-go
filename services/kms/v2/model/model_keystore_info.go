@@ -7,11 +7,8 @@ import (
 )
 
 type KeystoreInfo struct {
-
-	// 密钥库ID
 	KeystoreId *string `json:"keystore_id,omitempty"`
 
-	// 用户域ID
 	DomainId *string `json:"domain_id,omitempty"`
 }
 

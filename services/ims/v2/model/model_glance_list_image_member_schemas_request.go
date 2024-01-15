@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// GlanceListImageMemberSchemasRequest Request Object
 type GlanceListImageMemberSchemasRequest struct {
 }
 

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowServerBlockDeviceResponse Response Object
 type ShowServerBlockDeviceResponse struct {
 	VolumeAttachment *ServerBlockDevice `json:"volumeAttachment,omitempty"`
 	HttpStatusCode   int                `json:"-"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateCustomTemplateResponse Response Object
 type CreateCustomTemplateResponse struct {
-
-	// 模板ID
 	Id             *string `json:"id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// DeleteTransitIpTagResponse Response Object
 type DeleteTransitIpTagResponse struct {
 	Body           *string `json:"body,omitempty"`
 	HttpStatusCode int     `json:"-"`

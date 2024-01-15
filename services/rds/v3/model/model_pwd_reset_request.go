@@ -7,8 +7,6 @@ import (
 )
 
 type PwdResetRequest struct {
-
-	// 数据库密码
 	DbUserPwd string `json:"db_user_pwd"`
 }
 

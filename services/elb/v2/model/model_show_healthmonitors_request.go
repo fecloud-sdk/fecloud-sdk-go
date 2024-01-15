@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowHealthmonitorsRequest Request Object
 type ShowHealthmonitorsRequest struct {
-
-	// 健康检查id
 	HealthmonitorId string `json:"healthmonitor_id"`
 }
 

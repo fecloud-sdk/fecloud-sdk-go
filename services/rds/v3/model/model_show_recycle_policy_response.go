@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowRecyclePolicyResponse Response Object
 type ShowRecyclePolicyResponse struct {
-
-	// 回收站实例保留天数
 	RetentionPeriodInDays *int32 `json:"retention_period_in_days,omitempty"`
 	HttpStatusCode        int    `json:"-"`
 }

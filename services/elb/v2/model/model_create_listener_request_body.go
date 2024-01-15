@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateListenerRequestBody This is a auto create Body Object
 type CreateListenerRequestBody struct {
 	Listener *CreateListenerReq `json:"listener"`
 }

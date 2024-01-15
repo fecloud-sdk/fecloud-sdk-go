@@ -7,11 +7,8 @@ import (
 )
 
 type ExtensionRequest struct {
-
-	// 数据库名称。
 	DatabaseName string `json:"database_name"`
 
-	// 插件名称。
 	ExtensionName string `json:"extension_name"`
 }
 

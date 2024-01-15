@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateTransitIpRequest Request Object
 type CreateTransitIpRequest struct {
 	Body *CreateTransitIpRequestBody `json:"body,omitempty"`
 }

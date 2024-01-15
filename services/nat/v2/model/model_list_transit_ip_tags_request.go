@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ListTransitIpTagsRequest Request Object
 type ListTransitIpTagsRequest struct {
 }
 

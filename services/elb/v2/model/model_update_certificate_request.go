@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateCertificateRequest Request Object
 type UpdateCertificateRequest struct {
-
-	// SSL证书ID
 	CertificateId string `json:"certificate_id"`
 
 	Body *UpdateCertificateRequestBody `json:"body,omitempty"`

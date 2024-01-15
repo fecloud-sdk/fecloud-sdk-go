@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// BackupInstanceBody 备份实例请求体
 type BackupInstanceBody struct {
-
-	// 备份缓存实例的备注信息。
 	Remark *string `json:"remark,omitempty"`
 
-	// 备份缓存实例的格式。
 	BackupFormat *BackupInstanceBodyBackupFormat `json:"backup_format,omitempty"`
 }
 

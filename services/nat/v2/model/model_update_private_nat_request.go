@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdatePrivateNatRequest Request Object
 type UpdatePrivateNatRequest struct {
-
-	// 私网NAT网关实例的ID。
 	GatewayId string `json:"gateway_id"`
 
 	Body *UpdatePrivateNatRequestBody `json:"body,omitempty"`

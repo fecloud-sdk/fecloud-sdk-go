@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// SelectedSetAlarmTaskReq 需要设置SMN的任务信息。
 type SelectedSetAlarmTaskReq struct {
-
-	// 任务ID
 	JobId string `json:"job_id"`
 
-	// 任务状态
 	Status string `json:"status"`
 
-	// 引擎类型
 	EngineType string `json:"engine_type"`
 }
 

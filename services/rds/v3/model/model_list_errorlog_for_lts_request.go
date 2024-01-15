@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// ListErrorlogForLtsRequest Request Object
 type ListErrorlogForLtsRequest struct {
-
-	// 实例ID。
 	InstanceId string `json:"instance_id"`
 
-	// 语言。默认en-us。
 	XLanguage *ListErrorlogForLtsRequestXLanguage `json:"X-Language,omitempty"`
 
 	Body *ErrorlogForLtsRequest `json:"body,omitempty"`

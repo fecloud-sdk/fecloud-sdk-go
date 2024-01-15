@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchStartServersOption
 type BatchStartServersOption struct {
-
-	// 云服务器ID列表
 	Servers []ServerId `json:"servers"`
 }
 

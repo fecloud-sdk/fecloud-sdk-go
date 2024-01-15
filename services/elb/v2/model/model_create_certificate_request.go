@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateCertificateRequest Request Object
 type CreateCertificateRequest struct {
 	Body *CreateCertificateRequestBody `json:"body,omitempty"`
 }

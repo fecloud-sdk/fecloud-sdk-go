@@ -7,8 +7,6 @@ import (
 )
 
 type DeleteTagsOption struct {
-
-	// 标签键。
 	Key string `json:"key"`
 }
 

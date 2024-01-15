@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// SetDatabaseUserPrivilegeResponse Response Object
 type SetDatabaseUserPrivilegeResponse struct {
 	HttpStatusCode int `json:"-"`
 }

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateKeyStoreResponse Response Object
 type CreateKeyStoreResponse struct {
 	Keystore       *KeystoreInfo `json:"keystore,omitempty"`
 	HttpStatusCode int           `json:"-"`

@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// CreateScalingV2PolicyResponse Response Object
 type CreateScalingV2PolicyResponse struct {
-
-	// 伸缩策略ID。
 	ScalingPolicyId *string `json:"scaling_policy_id,omitempty"`
 	HttpStatusCode  int     `json:"-"`
 }

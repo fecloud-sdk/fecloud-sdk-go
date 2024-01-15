@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// UpdateServerAutoTerminateTimeRequestBody This is a auto create Body Object
 type UpdateServerAutoTerminateTimeRequestBody struct {
-
-	// 销毁时间
 	AutoTerminateTime string `json:"auto_terminate_time"`
 }
 

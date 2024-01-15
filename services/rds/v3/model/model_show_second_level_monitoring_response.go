@@ -9,13 +9,9 @@ import (
 	"strings"
 )
 
-// ShowSecondLevelMonitoringResponse Response Object
 type ShowSecondLevelMonitoringResponse struct {
-
-	// 秒级监控开关
 	SwitchOption *bool `json:"switch_option,omitempty"`
 
-	// 监控间隔, 支持1秒和5秒
 	Interval       *ShowSecondLevelMonitoringResponseInterval `json:"interval,omitempty"`
 	HttpStatusCode int                                        `json:"-"`
 }

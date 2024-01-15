@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// ListPrivateNatsByTagsResponse Response Object
 type ListPrivateNatsByTagsResponse struct {
-
-	// 资源列表。
 	Resources *[]Resource `json:"resources,omitempty"`
 
-	// 请求id。
 	RequestId *string `json:"request_id,omitempty"`
 
-	// 总记录数。
 	TotalCount     *int32 `json:"total_count,omitempty"`
 	HttpStatusCode int    `json:"-"`
 }

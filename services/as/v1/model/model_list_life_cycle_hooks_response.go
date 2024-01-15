@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListLifeCycleHooksResponse Response Object
 type ListLifeCycleHooksResponse struct {
-
-	// 生命周期挂钩列表。
 	LifecycleHooks *[]LifecycleHookList `json:"lifecycle_hooks,omitempty"`
 	HttpStatusCode int                  `json:"-"`
 }

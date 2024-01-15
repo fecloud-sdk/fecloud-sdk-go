@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ShowPrivateNatRequest Request Object
 type ShowPrivateNatRequest struct {
-
-	// 私网NAT网关实例的ID。
 	GatewayId string `json:"gateway_id"`
 }
 

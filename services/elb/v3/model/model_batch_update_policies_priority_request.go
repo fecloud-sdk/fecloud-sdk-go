@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// BatchUpdatePoliciesPriorityRequest Request Object
 type BatchUpdatePoliciesPriorityRequest struct {
 	Body *BatchUpdatePoliciesPriorityRequestBody `json:"body,omitempty"`
 }

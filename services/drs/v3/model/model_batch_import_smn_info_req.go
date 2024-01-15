@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchImportSmnInfoReq 录入、修改收件方式与信息请求体。
 type BatchImportSmnInfoReq struct {
-
-	// 任务信息
 	Jobs []SelectedSetAlarmTaskReq `json:"jobs"`
 
 	AlarmNotifyInfo *BatchSetAlarmNotifyInfo `json:"alarm_notify_info"`

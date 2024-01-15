@@ -7,8 +7,6 @@ import (
 )
 
 type ListServerGroupsPageInfoResult struct {
-
-	//
 	NextMarker *string `json:"next_marker,omitempty"`
 }
 

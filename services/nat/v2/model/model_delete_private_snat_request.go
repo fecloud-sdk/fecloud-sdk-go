@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// DeletePrivateSnatRequest Request Object
 type DeletePrivateSnatRequest struct {
-
-	// SNAT规则的ID。
 	SnatRuleId string `json:"snat_rule_id"`
 }
 

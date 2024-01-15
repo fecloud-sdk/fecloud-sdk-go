@@ -6,16 +6,11 @@ import (
 	"strings"
 )
 
-// ShowAutoEnlargePolicyResponse Response Object
 type ShowAutoEnlargePolicyResponse struct {
-
-	// 是否已开启自动扩容，true为开启
 	SwitchOption *bool `json:"switch_option,omitempty"`
 
-	// 扩容上限，单位GB
 	LimitSize *int32 `json:"limit_size,omitempty"`
 
-	// 可用空间百分比，小于等于此值或者10GB时触发扩容
 	TriggerThreshold *int32 `json:"trigger_threshold,omitempty"`
 	HttpStatusCode   int    `json:"-"`
 }

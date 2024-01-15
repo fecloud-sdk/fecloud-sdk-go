@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListDrRelationsRequest Request Object
 type ListDrRelationsRequest struct {
-
-	// 语言
 	XLanguage *string `json:"X-Language,omitempty"`
 }
 

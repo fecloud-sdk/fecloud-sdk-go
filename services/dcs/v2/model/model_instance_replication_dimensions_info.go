@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// InstanceReplicationDimensionsInfo 监控指标维度对象信息
 type InstanceReplicationDimensionsInfo struct {
-
-	// 监控维度名称
 	Name *string `json:"name,omitempty"`
 
-	// 维度取值
 	Value *string `json:"value,omitempty"`
 }
 

@@ -7,8 +7,6 @@ import (
 )
 
 type AddMsdtcRequestBody struct {
-
-	// 主机信息，key为hostname ，value 为IP
 	Hosts *[]MsdtcHostOption `json:"hosts,omitempty"`
 }
 

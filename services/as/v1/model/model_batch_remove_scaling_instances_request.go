@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// BatchRemoveScalingInstancesRequest Request Object
 type BatchRemoveScalingInstancesRequest struct {
-
-	// 实例ID。
 	ScalingGroupId string `json:"scaling_group_id"`
 
 	Body *BatchRemoveInstancesOption `json:"body,omitempty"`

@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// CreateCertificateRequestBody This is a auto create Body Object
 type CreateCertificateRequestBody struct {
 	Certificate *CreateCertificateOption `json:"certificate"`
 }

@@ -7,11 +7,8 @@ import (
 )
 
 type SubJobEntities struct {
-
-	// 镜像ID。
 	ImageId *string `json:"image_id,omitempty"`
 
-	// 镜像名称
 	ImageName *string `json:"image_name,omitempty"`
 }
 

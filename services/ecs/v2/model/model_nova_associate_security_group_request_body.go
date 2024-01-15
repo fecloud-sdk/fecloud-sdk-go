@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// NovaAssociateSecurityGroupRequestBody This is a auto create Body Object
 type NovaAssociateSecurityGroupRequestBody struct {
 	AddSecurityGroup *NovaAddSecurityGroupOption `json:"addSecurityGroup"`
 }

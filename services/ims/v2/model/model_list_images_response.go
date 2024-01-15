@@ -6,10 +6,7 @@ import (
 	"strings"
 )
 
-// ListImagesResponse Response Object
 type ListImagesResponse struct {
-
-	// 镜像列表
 	Images         *[]ImageInfo `json:"images,omitempty"`
 	HttpStatusCode int          `json:"-"`
 }

@@ -9,10 +9,7 @@ import (
 	"strings"
 )
 
-// ListStorageTypeRequest Request Object
 type ListStorageTypeRequest struct {
-
-	// 数据库版本类型： - 取值为“DDS-Community”。
 	EngineName *ListStorageTypeRequestEngineName `json:"engine_name,omitempty"`
 }
 

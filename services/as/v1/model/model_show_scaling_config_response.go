@@ -6,7 +6,6 @@ import (
 	"strings"
 )
 
-// ShowScalingConfigResponse Response Object
 type ShowScalingConfigResponse struct {
 	ScalingConfiguration *ScalingConfiguration `json:"scaling_configuration,omitempty"`
 	HttpStatusCode       int                   `json:"-"`

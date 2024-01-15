@@ -7,11 +7,8 @@ import (
 )
 
 type EntityInfo struct {
-
-	// 组ID或节点ID。
 	EntityId string `json:"entity_id"`
 
-	// 组名称或节点名称。
 	EntityName string `json:"entity_name"`
 }
 

@@ -6,13 +6,9 @@ import (
 	"strings"
 )
 
-// ShrinkInstanceNodesResponse Response Object
 type ShrinkInstanceNodesResponse struct {
-
-	// 任务ID，仅按需实例返回该参数。
 	JobId *string `json:"job_id,omitempty"`
 
-	// 订单ID，仅包周期实例返回该参数。
 	OrderId        *string `json:"order_id,omitempty"`
 	HttpStatusCode int     `json:"-"`
 }
